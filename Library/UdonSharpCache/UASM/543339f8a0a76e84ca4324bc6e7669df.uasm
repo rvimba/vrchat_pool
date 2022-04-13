@@ -1,0 +1,727 @@
+.data_start
+
+    .export text
+    .export maxChars
+    .export printLogsToConsole
+
+    __refl_const_intnl_udonTypeID: %SystemInt64, null
+    __refl_const_intnl_udonTypeName: %SystemString, null
+    printLogsToConsole: %SystemBoolean, null
+    maxChars: %SystemInt32, null
+    text: %TMProTextMeshProUGUI, null
+    __2_mp_log_String: %SystemString, null
+    __2_mp_source_String: %SystemString, null
+    __1_mp_log_String: %SystemString, null
+    __1_mp_source_String: %SystemString, null
+    __0_mp_log_String: %SystemString, null
+    __0_mp_source_String: %SystemString, null
+    __0_const_intnl_SystemInt32: %SystemInt32, null
+    __10_const_intnl_SystemString: %SystemString, null
+    __9_const_intnl_SystemString: %SystemString, null
+    __8_const_intnl_SystemString: %SystemString, null
+    __7_const_intnl_SystemString: %SystemString, null
+    __6_const_intnl_SystemString: %SystemString, null
+    __5_const_intnl_SystemString: %SystemString, null
+    __4_const_intnl_SystemString: %SystemString, null
+    __3_const_intnl_SystemString: %SystemString, null
+    __2_const_intnl_SystemString: %SystemString, null
+    __1_const_intnl_SystemString: %SystemString, null
+    __0_const_intnl_SystemString: %SystemString, null
+    __0_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __0_const_intnl_SystemUInt32: %SystemUInt32, null
+    __11_intnl_SystemBoolean: %SystemBoolean, null
+    __10_intnl_SystemBoolean: %SystemBoolean, null
+    __9_intnl_SystemBoolean: %SystemBoolean, null
+    __8_intnl_SystemBoolean: %SystemBoolean, null
+    __7_intnl_SystemBoolean: %SystemBoolean, null
+    __6_intnl_SystemBoolean: %SystemBoolean, null
+    __5_intnl_SystemBoolean: %SystemBoolean, null
+    __4_intnl_SystemBoolean: %SystemBoolean, null
+    __3_intnl_SystemBoolean: %SystemBoolean, null
+    __2_intnl_SystemBoolean: %SystemBoolean, null
+    __1_intnl_SystemBoolean: %SystemBoolean, null
+    __0_intnl_SystemBoolean: %SystemBoolean, null
+    __8_intnl_SystemInt32: %SystemInt32, null
+    __7_intnl_SystemInt32: %SystemInt32, null
+    __6_intnl_SystemInt32: %SystemInt32, null
+    __5_intnl_SystemInt32: %SystemInt32, null
+    __4_intnl_SystemInt32: %SystemInt32, null
+    __3_intnl_SystemInt32: %SystemInt32, null
+    __2_intnl_SystemInt32: %SystemInt32, null
+    __1_intnl_SystemInt32: %SystemInt32, null
+    __0_intnl_SystemInt32: %SystemInt32, null
+    __4_intnl_SystemSingle: %SystemSingle, null
+    __3_intnl_SystemSingle: %SystemSingle, null
+    __2_intnl_SystemSingle: %SystemSingle, null
+    __1_intnl_SystemSingle: %SystemSingle, null
+    __0_intnl_SystemSingle: %SystemSingle, null
+    __54_intnl_SystemString: %SystemString, null
+    __53_intnl_SystemString: %SystemString, null
+    __52_intnl_SystemString: %SystemString, null
+    __51_intnl_SystemString: %SystemString, null
+    __50_intnl_SystemString: %SystemString, null
+    __49_intnl_SystemString: %SystemString, null
+    __48_intnl_SystemString: %SystemString, null
+    __47_intnl_SystemString: %SystemString, null
+    __46_intnl_SystemString: %SystemString, null
+    __45_intnl_SystemString: %SystemString, null
+    __44_intnl_SystemString: %SystemString, null
+    __43_intnl_SystemString: %SystemString, null
+    __42_intnl_SystemString: %SystemString, null
+    __41_intnl_SystemString: %SystemString, null
+    __40_intnl_SystemString: %SystemString, null
+    __4_intnl_interpolatedStr_String: %SystemString, null
+    __39_intnl_SystemString: %SystemString, null
+    __38_intnl_SystemString: %SystemString, null
+    __37_intnl_SystemString: %SystemString, null
+    __36_intnl_SystemString: %SystemString, null
+    __35_intnl_SystemString: %SystemString, null
+    __34_intnl_SystemString: %SystemString, null
+    __3_intnl_interpolatedStr_String: %SystemString, null
+    __33_intnl_SystemString: %SystemString, null
+    __32_intnl_SystemString: %SystemString, null
+    __31_intnl_SystemString: %SystemString, null
+    __30_intnl_SystemString: %SystemString, null
+    __29_intnl_SystemString: %SystemString, null
+    __28_intnl_SystemString: %SystemString, null
+    __27_intnl_SystemString: %SystemString, null
+    __26_intnl_SystemString: %SystemString, null
+    __25_intnl_SystemString: %SystemString, null
+    __24_intnl_SystemString: %SystemString, null
+    __23_intnl_SystemString: %SystemString, null
+    __22_intnl_SystemString: %SystemString, null
+    __21_intnl_SystemString: %SystemString, null
+    __20_intnl_SystemString: %SystemString, null
+    __2_intnl_interpolatedStr_String: %SystemString, null
+    __19_intnl_SystemString: %SystemString, null
+    __18_intnl_SystemString: %SystemString, null
+    __17_intnl_SystemString: %SystemString, null
+    __16_intnl_SystemString: %SystemString, null
+    __15_intnl_SystemString: %SystemString, null
+    __14_intnl_SystemString: %SystemString, null
+    __1_intnl_interpolatedStr_String: %SystemString, null
+    __13_intnl_SystemString: %SystemString, null
+    __12_intnl_SystemString: %SystemString, null
+    __11_intnl_SystemString: %SystemString, null
+    __10_intnl_SystemString: %SystemString, null
+    __9_intnl_SystemString: %SystemString, null
+    __8_intnl_SystemString: %SystemString, null
+    __7_intnl_SystemString: %SystemString, null
+    __6_intnl_SystemString: %SystemString, null
+    __5_intnl_SystemString: %SystemString, null
+    __4_intnl_SystemString: %SystemString, null
+    __3_intnl_SystemString: %SystemString, null
+    __2_intnl_SystemString: %SystemString, null
+    __1_intnl_SystemString: %SystemString, null
+    __0_intnl_SystemString: %SystemString, null
+    __0_intnl_interpolatedStr_String: %SystemString, null
+    __0_intnl_returnTarget_UInt32: %SystemUInt32, null
+
+.data_end
+
+        
+         #  using UdonSharp;
+        
+         #  using UnityEngine;
+        
+         #  namespace FairlySadPanda
+        
+         #  namespace UsefulThings
+        
+         #  [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
+        
+         #  public class Logger : UdonSharpBehaviour
+.code_start
+        
+         #  public TMPro.TextMeshProUGUI text;
+        
+         #  public int maxChars;
+        
+         #  [Tooltip("Print Log calls to console. Enable to make logs easier to see.")]
+        
+         #  public void Start()
+    .export _start
+        
+    _start:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  _Log("TestLogger", "Start");
+        PUSH, __1_const_intnl_SystemString
+        PUSH, __0_mp_source_String
+        COPY
+        PUSH, __2_const_intnl_SystemString
+        PUSH, __0_mp_log_String
+        COPY
+        PUSH, __0_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x0000005C
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _Log(string source, string log)
+    .export _Log
+        
+    _Log:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (printLogsToConsole)
+        PUSH, printLogsToConsole
+        JUMP_IF_FALSE, 0x000001C4
+        
+         #  {
+        
+         #  Debug.Log($"[{Time.timeSinceLevelLoad:N2}] [<color=green>{source}</color>] {log}");
+        PUSH, __3_const_intnl_SystemString
+        PUSH, __0_intnl_interpolatedStr_String
+        COPY
+        PUSH, __0_intnl_SystemSingle
+        EXTERN, "UnityEngineTime.__get_timeSinceLevelLoad__SystemSingle"
+        PUSH, __4_const_intnl_SystemString
+        PUSH, __0_intnl_SystemSingle
+        PUSH, __0_intnl_SystemString
+        EXTERN, "SystemString.__Format__SystemString_SystemObject__SystemString"
+        PUSH, __0_intnl_interpolatedStr_String
+        PUSH, __0_intnl_SystemString
+        PUSH, __1_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __1_intnl_SystemString
+        PUSH, __0_intnl_interpolatedStr_String
+        COPY
+        PUSH, __0_intnl_interpolatedStr_String
+        PUSH, __5_const_intnl_SystemString
+        PUSH, __2_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __2_intnl_SystemString
+        PUSH, __0_intnl_interpolatedStr_String
+        COPY
+        PUSH, __0_intnl_interpolatedStr_String
+        PUSH, __0_mp_source_String
+        PUSH, __3_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __3_intnl_SystemString
+        PUSH, __0_intnl_interpolatedStr_String
+        COPY
+        PUSH, __0_intnl_interpolatedStr_String
+        PUSH, __6_const_intnl_SystemString
+        PUSH, __4_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __4_intnl_SystemString
+        PUSH, __0_intnl_interpolatedStr_String
+        COPY
+        PUSH, __0_intnl_interpolatedStr_String
+        PUSH, __0_mp_log_String
+        PUSH, __5_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __5_intnl_SystemString
+        PUSH, __0_intnl_interpolatedStr_String
+        COPY
+        PUSH, __0_intnl_interpolatedStr_String
+        EXTERN, "UnityEngineDebug.__Log__SystemObject__SystemVoid"
+        
+         #  text.text += $"\n[{Time.timeSinceLevelLoad:N2}] [<color=green>{source}</color>] {log}";
+        PUSH, __7_const_intnl_SystemString
+        PUSH, __0_intnl_interpolatedStr_String
+        COPY
+        PUSH, __0_intnl_SystemSingle
+        EXTERN, "UnityEngineTime.__get_timeSinceLevelLoad__SystemSingle"
+        PUSH, __4_const_intnl_SystemString
+        PUSH, __0_intnl_SystemSingle
+        PUSH, __0_intnl_SystemString
+        EXTERN, "SystemString.__Format__SystemString_SystemObject__SystemString"
+        PUSH, __0_intnl_interpolatedStr_String
+        PUSH, __0_intnl_SystemString
+        PUSH, __1_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __1_intnl_SystemString
+        PUSH, __0_intnl_interpolatedStr_String
+        COPY
+        PUSH, __0_intnl_interpolatedStr_String
+        PUSH, __5_const_intnl_SystemString
+        PUSH, __2_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __2_intnl_SystemString
+        PUSH, __0_intnl_interpolatedStr_String
+        COPY
+        PUSH, __0_intnl_interpolatedStr_String
+        PUSH, __0_mp_source_String
+        PUSH, __3_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __3_intnl_SystemString
+        PUSH, __0_intnl_interpolatedStr_String
+        COPY
+        PUSH, __0_intnl_interpolatedStr_String
+        PUSH, __6_const_intnl_SystemString
+        PUSH, __4_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __4_intnl_SystemString
+        PUSH, __0_intnl_interpolatedStr_String
+        COPY
+        PUSH, __0_intnl_interpolatedStr_String
+        PUSH, __0_mp_log_String
+        PUSH, __5_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __5_intnl_SystemString
+        PUSH, __0_intnl_interpolatedStr_String
+        COPY
+        PUSH, __0_intnl_interpolatedStr_String
+        PUSH, __6_intnl_SystemString
+        EXTERN, "SystemString.__ToString__SystemString"
+        PUSH, text
+        PUSH, __7_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__get_text__SystemString"
+        PUSH, __7_intnl_SystemString
+        PUSH, __6_intnl_SystemString
+        PUSH, __8_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, text
+        PUSH, __8_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  while (text.text.Length > maxChars && text.text.Contains("\n"))
+        PUSH, text
+        PUSH, __9_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__get_text__SystemString"
+        PUSH, __9_intnl_SystemString
+        PUSH, __0_intnl_SystemInt32
+        EXTERN, "SystemString.__get_Length__SystemInt32"
+        PUSH, __0_intnl_SystemInt32
+        PUSH, maxChars
+        PUSH, __1_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __1_intnl_SystemBoolean
+        PUSH, __0_intnl_SystemBoolean
+        COPY
+        PUSH, __0_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000454
+        PUSH, text
+        PUSH, __10_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__get_text__SystemString"
+        PUSH, __10_intnl_SystemString
+        PUSH, __8_const_intnl_SystemString
+        PUSH, __2_intnl_SystemBoolean
+        EXTERN, "SystemString.__Contains__SystemString__SystemBoolean"
+        PUSH, __0_intnl_SystemBoolean
+        PUSH, __2_intnl_SystemBoolean
+        PUSH, __3_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __3_intnl_SystemBoolean
+        PUSH, __0_intnl_SystemBoolean
+        COPY
+        PUSH, __0_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000514
+        
+         #  {
+        
+         #  text.text = text.text.Substring(text.text.IndexOf("\n") + 1);
+        PUSH, text
+        PUSH, __11_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__get_text__SystemString"
+        PUSH, text
+        PUSH, __12_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__get_text__SystemString"
+        PUSH, __12_intnl_SystemString
+        PUSH, __8_const_intnl_SystemString
+        PUSH, __1_intnl_SystemInt32
+        EXTERN, "SystemString.__IndexOf__SystemString__SystemInt32"
+        PUSH, __1_intnl_SystemInt32
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __2_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __11_intnl_SystemString
+        PUSH, __2_intnl_SystemInt32
+        PUSH, __13_intnl_SystemString
+        EXTERN, "SystemString.__Substring__SystemInt32__SystemString"
+        PUSH, text
+        PUSH, __13_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        JUMP, 0x00000374
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _Warning(string source, string log)
+    .export _Warning
+        
+    _Warning:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  Debug.LogWarning($"[{Time.timeSinceLevelLoad:N2}] [<color=red>{source}</color>] {log}");
+        PUSH, __3_const_intnl_SystemString
+        PUSH, __1_intnl_interpolatedStr_String
+        COPY
+        PUSH, __1_intnl_SystemSingle
+        EXTERN, "UnityEngineTime.__get_timeSinceLevelLoad__SystemSingle"
+        PUSH, __4_const_intnl_SystemString
+        PUSH, __1_intnl_SystemSingle
+        PUSH, __14_intnl_SystemString
+        EXTERN, "SystemString.__Format__SystemString_SystemObject__SystemString"
+        PUSH, __1_intnl_interpolatedStr_String
+        PUSH, __14_intnl_SystemString
+        PUSH, __15_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __15_intnl_SystemString
+        PUSH, __1_intnl_interpolatedStr_String
+        COPY
+        PUSH, __1_intnl_interpolatedStr_String
+        PUSH, __9_const_intnl_SystemString
+        PUSH, __16_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __16_intnl_SystemString
+        PUSH, __1_intnl_interpolatedStr_String
+        COPY
+        PUSH, __1_intnl_interpolatedStr_String
+        PUSH, __1_mp_source_String
+        PUSH, __17_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __17_intnl_SystemString
+        PUSH, __1_intnl_interpolatedStr_String
+        COPY
+        PUSH, __1_intnl_interpolatedStr_String
+        PUSH, __6_const_intnl_SystemString
+        PUSH, __18_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __18_intnl_SystemString
+        PUSH, __1_intnl_interpolatedStr_String
+        COPY
+        PUSH, __1_intnl_interpolatedStr_String
+        PUSH, __1_mp_log_String
+        PUSH, __19_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __19_intnl_SystemString
+        PUSH, __1_intnl_interpolatedStr_String
+        COPY
+        PUSH, __1_intnl_interpolatedStr_String
+        EXTERN, "UnityEngineDebug.__LogWarning__SystemObject__SystemVoid"
+        
+         #  text.text += $"\n[{Time.timeSinceLevelLoad:N2}] [<color=yellow>{source}</color>] {log}";
+        PUSH, __7_const_intnl_SystemString
+        PUSH, __2_intnl_interpolatedStr_String
+        COPY
+        PUSH, __2_intnl_SystemSingle
+        EXTERN, "UnityEngineTime.__get_timeSinceLevelLoad__SystemSingle"
+        PUSH, __4_const_intnl_SystemString
+        PUSH, __2_intnl_SystemSingle
+        PUSH, __20_intnl_SystemString
+        EXTERN, "SystemString.__Format__SystemString_SystemObject__SystemString"
+        PUSH, __2_intnl_interpolatedStr_String
+        PUSH, __20_intnl_SystemString
+        PUSH, __21_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __21_intnl_SystemString
+        PUSH, __2_intnl_interpolatedStr_String
+        COPY
+        PUSH, __2_intnl_interpolatedStr_String
+        PUSH, __10_const_intnl_SystemString
+        PUSH, __22_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __22_intnl_SystemString
+        PUSH, __2_intnl_interpolatedStr_String
+        COPY
+        PUSH, __2_intnl_interpolatedStr_String
+        PUSH, __1_mp_source_String
+        PUSH, __23_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __23_intnl_SystemString
+        PUSH, __2_intnl_interpolatedStr_String
+        COPY
+        PUSH, __2_intnl_interpolatedStr_String
+        PUSH, __6_const_intnl_SystemString
+        PUSH, __24_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __24_intnl_SystemString
+        PUSH, __2_intnl_interpolatedStr_String
+        COPY
+        PUSH, __2_intnl_interpolatedStr_String
+        PUSH, __1_mp_log_String
+        PUSH, __25_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __25_intnl_SystemString
+        PUSH, __2_intnl_interpolatedStr_String
+        COPY
+        PUSH, __2_intnl_interpolatedStr_String
+        PUSH, __26_intnl_SystemString
+        EXTERN, "SystemString.__ToString__SystemString"
+        PUSH, text
+        PUSH, __27_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__get_text__SystemString"
+        PUSH, __27_intnl_SystemString
+        PUSH, __26_intnl_SystemString
+        PUSH, __28_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, text
+        PUSH, __28_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  while (text.text.Length > maxChars && text.text.Contains("\n"))
+        PUSH, text
+        PUSH, __29_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__get_text__SystemString"
+        PUSH, __29_intnl_SystemString
+        PUSH, __3_intnl_SystemInt32
+        EXTERN, "SystemString.__get_Length__SystemInt32"
+        PUSH, __3_intnl_SystemInt32
+        PUSH, maxChars
+        PUSH, __5_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __5_intnl_SystemBoolean
+        PUSH, __4_intnl_SystemBoolean
+        COPY
+        PUSH, __4_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000918
+        PUSH, text
+        PUSH, __30_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__get_text__SystemString"
+        PUSH, __30_intnl_SystemString
+        PUSH, __8_const_intnl_SystemString
+        PUSH, __6_intnl_SystemBoolean
+        EXTERN, "SystemString.__Contains__SystemString__SystemBoolean"
+        PUSH, __4_intnl_SystemBoolean
+        PUSH, __6_intnl_SystemBoolean
+        PUSH, __7_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __7_intnl_SystemBoolean
+        PUSH, __4_intnl_SystemBoolean
+        COPY
+        PUSH, __4_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000009D8
+        
+         #  {
+        
+         #  text.text = text.text.Substring(text.text.IndexOf("\n") + 1);
+        PUSH, text
+        PUSH, __31_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__get_text__SystemString"
+        PUSH, text
+        PUSH, __32_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__get_text__SystemString"
+        PUSH, __32_intnl_SystemString
+        PUSH, __8_const_intnl_SystemString
+        PUSH, __4_intnl_SystemInt32
+        EXTERN, "SystemString.__IndexOf__SystemString__SystemInt32"
+        PUSH, __4_intnl_SystemInt32
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __5_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __31_intnl_SystemString
+        PUSH, __5_intnl_SystemInt32
+        PUSH, __33_intnl_SystemString
+        EXTERN, "SystemString.__Substring__SystemInt32__SystemString"
+        PUSH, text
+        PUSH, __33_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        JUMP, 0x00000838
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _Error(string source, string log)
+    .export _Error
+        
+    _Error:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  Debug.LogError($"[{Time.timeSinceLevelLoad:N2}] [<color=red>{source}</color>] {log}");
+        PUSH, __3_const_intnl_SystemString
+        PUSH, __3_intnl_interpolatedStr_String
+        COPY
+        PUSH, __3_intnl_SystemSingle
+        EXTERN, "UnityEngineTime.__get_timeSinceLevelLoad__SystemSingle"
+        PUSH, __4_const_intnl_SystemString
+        PUSH, __3_intnl_SystemSingle
+        PUSH, __34_intnl_SystemString
+        EXTERN, "SystemString.__Format__SystemString_SystemObject__SystemString"
+        PUSH, __3_intnl_interpolatedStr_String
+        PUSH, __34_intnl_SystemString
+        PUSH, __35_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __35_intnl_SystemString
+        PUSH, __3_intnl_interpolatedStr_String
+        COPY
+        PUSH, __3_intnl_interpolatedStr_String
+        PUSH, __9_const_intnl_SystemString
+        PUSH, __36_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __36_intnl_SystemString
+        PUSH, __3_intnl_interpolatedStr_String
+        COPY
+        PUSH, __3_intnl_interpolatedStr_String
+        PUSH, __2_mp_source_String
+        PUSH, __37_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __37_intnl_SystemString
+        PUSH, __3_intnl_interpolatedStr_String
+        COPY
+        PUSH, __3_intnl_interpolatedStr_String
+        PUSH, __6_const_intnl_SystemString
+        PUSH, __38_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __38_intnl_SystemString
+        PUSH, __3_intnl_interpolatedStr_String
+        COPY
+        PUSH, __3_intnl_interpolatedStr_String
+        PUSH, __2_mp_log_String
+        PUSH, __39_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __39_intnl_SystemString
+        PUSH, __3_intnl_interpolatedStr_String
+        COPY
+        PUSH, __3_intnl_interpolatedStr_String
+        EXTERN, "UnityEngineDebug.__LogError__SystemObject__SystemVoid"
+        
+         #  text.text += $"\n[{Time.timeSinceLevelLoad:N2}] [<color=red>{source}</color>] {log}";
+        PUSH, __7_const_intnl_SystemString
+        PUSH, __4_intnl_interpolatedStr_String
+        COPY
+        PUSH, __4_intnl_SystemSingle
+        EXTERN, "UnityEngineTime.__get_timeSinceLevelLoad__SystemSingle"
+        PUSH, __4_const_intnl_SystemString
+        PUSH, __4_intnl_SystemSingle
+        PUSH, __40_intnl_SystemString
+        EXTERN, "SystemString.__Format__SystemString_SystemObject__SystemString"
+        PUSH, __4_intnl_interpolatedStr_String
+        PUSH, __40_intnl_SystemString
+        PUSH, __41_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __41_intnl_SystemString
+        PUSH, __4_intnl_interpolatedStr_String
+        COPY
+        PUSH, __4_intnl_interpolatedStr_String
+        PUSH, __9_const_intnl_SystemString
+        PUSH, __42_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __42_intnl_SystemString
+        PUSH, __4_intnl_interpolatedStr_String
+        COPY
+        PUSH, __4_intnl_interpolatedStr_String
+        PUSH, __2_mp_source_String
+        PUSH, __43_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __43_intnl_SystemString
+        PUSH, __4_intnl_interpolatedStr_String
+        COPY
+        PUSH, __4_intnl_interpolatedStr_String
+        PUSH, __6_const_intnl_SystemString
+        PUSH, __44_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __44_intnl_SystemString
+        PUSH, __4_intnl_interpolatedStr_String
+        COPY
+        PUSH, __4_intnl_interpolatedStr_String
+        PUSH, __2_mp_log_String
+        PUSH, __45_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __45_intnl_SystemString
+        PUSH, __4_intnl_interpolatedStr_String
+        COPY
+        PUSH, __4_intnl_interpolatedStr_String
+        PUSH, __46_intnl_SystemString
+        EXTERN, "SystemString.__ToString__SystemString"
+        PUSH, text
+        PUSH, __47_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__get_text__SystemString"
+        PUSH, __47_intnl_SystemString
+        PUSH, __46_intnl_SystemString
+        PUSH, __48_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, text
+        PUSH, __48_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  while (text.text.Length > maxChars && text.text.Contains("\n"))
+        PUSH, text
+        PUSH, __49_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__get_text__SystemString"
+        PUSH, __49_intnl_SystemString
+        PUSH, __6_intnl_SystemInt32
+        EXTERN, "SystemString.__get_Length__SystemInt32"
+        PUSH, __6_intnl_SystemInt32
+        PUSH, maxChars
+        PUSH, __9_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __9_intnl_SystemBoolean
+        PUSH, __8_intnl_SystemBoolean
+        COPY
+        PUSH, __8_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000DDC
+        PUSH, text
+        PUSH, __50_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__get_text__SystemString"
+        PUSH, __50_intnl_SystemString
+        PUSH, __8_const_intnl_SystemString
+        PUSH, __10_intnl_SystemBoolean
+        EXTERN, "SystemString.__Contains__SystemString__SystemBoolean"
+        PUSH, __8_intnl_SystemBoolean
+        PUSH, __10_intnl_SystemBoolean
+        PUSH, __11_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __11_intnl_SystemBoolean
+        PUSH, __8_intnl_SystemBoolean
+        COPY
+        PUSH, __8_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000E9C
+        
+         #  {
+        
+         #  text.text = text.text.Substring(text.text.IndexOf("\n") + 1);
+        PUSH, text
+        PUSH, __51_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__get_text__SystemString"
+        PUSH, text
+        PUSH, __52_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__get_text__SystemString"
+        PUSH, __52_intnl_SystemString
+        PUSH, __8_const_intnl_SystemString
+        PUSH, __7_intnl_SystemInt32
+        EXTERN, "SystemString.__IndexOf__SystemString__SystemInt32"
+        PUSH, __7_intnl_SystemInt32
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __8_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __51_intnl_SystemString
+        PUSH, __8_intnl_SystemInt32
+        PUSH, __53_intnl_SystemString
+        EXTERN, "SystemString.__Substring__SystemInt32__SystemString"
+        PUSH, text
+        PUSH, __53_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        JUMP, 0x00000CFC
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void Clear()
+    .export Clear
+        
+    Clear:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  text.text = string.Empty;
+        PUSH, __54_intnl_SystemString
+        EXTERN, "SystemString.__get_Empty__SystemString"
+        PUSH, text
+        PUSH, __54_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+.code_end

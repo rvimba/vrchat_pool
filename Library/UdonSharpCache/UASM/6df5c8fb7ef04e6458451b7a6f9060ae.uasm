@@ -1,0 +1,472 @@
+.data_start
+
+    .export poolMenu
+    .export uiGamemodeToggle
+    .export uiGuideToggle
+    .export uiTeamToggle
+    .export modeButtonText
+    .export modeLeft
+    .export modeRight
+    .export logger
+    .export isGamemodeMenuSwitched
+    .sync isGamemodeMenuSwitched, none
+    .sync modeSelect, none
+    .sync isGuide, none
+    .sync isTeams, none
+
+    __refl_const_intnl_udonTypeID: %SystemInt64, null
+    __refl_const_intnl_udonTypeName: %SystemString, null
+    uiTeamToggle: %UnityEngineAnimator, null
+    uiGuideToggle: %UnityEngineAnimator, null
+    uiGamemodeToggle: %UnityEngineAnimator, null
+    isGamemodeMenuSwitched: %SystemBoolean, null
+    modeRight: %TMProTextMeshProUGUI, null
+    modeLeft: %TMProTextMeshProUGUI, null
+    modeButtonText: %TMProTextMeshProUGUI, null
+    logger: %VRCUdonUdonBehaviour, null
+    poolMenu: %VRCUdonUdonBehaviour, null
+    isTeams: %SystemBoolean, null
+    isGuide: %SystemBoolean, null
+    modeSelect: %SystemBoolean, null
+    __0_this_intnl_UnityEngineGameObject: %UnityEngineGameObject, this
+    __0_this_intnl_VRCBilliardsUIAnimationManager: %VRCUdonUdonBehaviour, this
+    __21_const_intnl_SystemString: %SystemString, null
+    __20_const_intnl_SystemString: %SystemString, null
+    __19_const_intnl_SystemString: %SystemString, null
+    __18_const_intnl_SystemString: %SystemString, null
+    __17_const_intnl_SystemString: %SystemString, null
+    __16_const_intnl_SystemString: %SystemString, null
+    __15_const_intnl_SystemString: %SystemString, null
+    __14_const_intnl_SystemString: %SystemString, null
+    __13_const_intnl_SystemString: %SystemString, null
+    __12_const_intnl_SystemString: %SystemString, null
+    __11_const_intnl_SystemString: %SystemString, null
+    __10_const_intnl_SystemString: %SystemString, null
+    __9_const_intnl_SystemString: %SystemString, null
+    __8_const_intnl_SystemString: %SystemString, null
+    __7_const_intnl_SystemString: %SystemString, null
+    __6_const_intnl_SystemString: %SystemString, null
+    __5_const_intnl_SystemString: %SystemString, null
+    __4_const_intnl_SystemString: %SystemString, null
+    __3_const_intnl_SystemString: %SystemString, null
+    __2_const_intnl_SystemString: %SystemString, null
+    __1_const_intnl_SystemString: %SystemString, null
+    __0_const_intnl_SystemString: %SystemString, null
+    __4_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __3_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __2_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __1_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __0_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __0_const_intnl_SystemUInt32: %SystemUInt32, null
+    __0_intnl_SystemBoolean: %SystemBoolean, null
+    __0_intnl_SystemString: %SystemString, null
+    __0_intnl_returnTarget_UInt32: %SystemUInt32, null
+    __0_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null
+
+.data_end
+
+        
+         #  using TMPro;
+        
+         #  using UdonSharp;
+        
+         #  using UnityEngine;
+        
+         #  using VRC.SDKBase;
+        
+         #  namespace VRCBilliards
+        
+         #  [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
+        
+         #  public class UIAnimationManager : UdonSharpBehaviour
+.code_start
+        
+         #  public PoolMenu poolMenu;
+        
+         #  public Animator uiGamemodeToggle;
+        
+         #  public Animator uiGuideToggle;
+        
+         #  public Animator uiTeamToggle;
+        
+         #  public TextMeshProUGUI modeButtonText;
+        
+         #  public TextMeshProUGUI modeLeft;
+        
+         #  public TextMeshProUGUI modeRight;
+        
+         #  public FairlySadPanda.UsefulThings.Logger logger;
+        
+         #  [UdonSynced]
+        
+         #  [UdonSynced]
+        
+         #  [UdonSynced]
+        
+         #  [UdonSynced]
+        
+         #  private void UpdateSyncedVariables()
+    UpdateSyncedVariables:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  Networking.SetOwner(Networking.LocalPlayer, gameObject);
+        PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi
+        PUSH, __0_this_intnl_UnityEngineGameObject
+        EXTERN, "VRCSDKBaseNetworking.__SetOwner__VRCSDKBaseVRCPlayerApi_UnityEngineGameObject__SystemVoid"
+        
+         #  RequestSerialization();
+        PUSH, __0_this_intnl_VRCBilliardsUIAnimationManager
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__RequestSerialization__SystemVoid"
+        
+         #  OnDeserialization();
+        PUSH, __0_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x0000017C
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _SwitchGamemodeState()
+    .export _SwitchGamemodeState
+        
+    _SwitchGamemodeState:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  modeSelect = !modeSelect;
+        PUSH, modeSelect
+        PUSH, modeSelect
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        
+         #  UpdateSyncedVariables();
+        PUSH, __1_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000008
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _SwitchGamemodeMenu()
+    .export _SwitchGamemodeMenu
+        
+    _SwitchGamemodeMenu:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  isGamemodeMenuSwitched = !isGamemodeMenuSwitched;
+        PUSH, isGamemodeMenuSwitched
+        PUSH, isGamemodeMenuSwitched
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        
+         #  UpdateSyncedVariables();
+        PUSH, __2_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000008
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _SwitchGuideMode()
+    .export _SwitchGuideMode
+        
+    _SwitchGuideMode:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  isGuide = !isGuide;
+        PUSH, isGuide
+        PUSH, isGuide
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        
+         #  UpdateSyncedVariables();
+        PUSH, __3_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000008
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _SwitchTeams()
+    .export _SwitchTeams
+        
+    _SwitchTeams:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  isTeams = !isTeams;
+        PUSH, isTeams
+        PUSH, isTeams
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        
+         #  UpdateSyncedVariables();
+        PUSH, __4_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000008
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public override void OnDeserialization()
+    .export _onDeserialization
+        
+    _onDeserialization:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  uiGamemodeToggle.SetBool("Toggle", modeSelect);
+        PUSH, uiGamemodeToggle
+        PUSH, __0_const_intnl_SystemString
+        PUSH, modeSelect
+        EXTERN, "UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid"
+        
+         #  uiGuideToggle.SetBool("Toggle", isGuide);
+        PUSH, uiGuideToggle
+        PUSH, __0_const_intnl_SystemString
+        PUSH, isGuide
+        EXTERN, "UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid"
+        
+         #  uiTeamToggle.SetBool("Toggle", isTeams);
+        PUSH, uiTeamToggle
+        PUSH, __0_const_intnl_SystemString
+        PUSH, isTeams
+        EXTERN, "UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid"
+        
+         #  if (isGamemodeMenuSwitched)
+        PUSH, isGamemodeMenuSwitched
+        JUMP_IF_FALSE, 0x0000023C
+        
+         #  {
+        
+         #  modeButtonText.text = "Switch to Traditional Menu";
+        PUSH, modeButtonText
+        PUSH, __1_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  modeLeft.text = "Korean";
+        PUSH, modeLeft
+        PUSH, __2_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  modeRight.text = "Japanese";
+        PUSH, modeRight
+        PUSH, __3_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        JUMP, 0x00000284
+        
+         #  else
+        
+         #  {
+        
+         #  modeButtonText.text = "Switch to 4 Ball Menu";
+        PUSH, modeButtonText
+        PUSH, __4_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  modeLeft.text = "9 Ball";
+        PUSH, modeLeft
+        PUSH, __5_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  modeRight.text = "8 Ball";
+        PUSH, modeRight
+        PUSH, __6_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  if (isGuide)
+        PUSH, isGuide
+        JUMP_IF_FALSE, 0x000002B4
+        
+         #  {
+        
+         #  poolMenu._EnableGuideline();
+        PUSH, poolMenu
+        PUSH, __7_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        JUMP, 0x000002CC
+        
+         #  else
+        
+         #  {
+        
+         #  poolMenu._DisableGuideline();
+        PUSH, poolMenu
+        PUSH, __8_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        
+         #  if (isTeams)
+        PUSH, isTeams
+        JUMP_IF_FALSE, 0x000002FC
+        
+         #  {
+        
+         #  poolMenu._DeselectTeams();
+        PUSH, poolMenu
+        PUSH, __9_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        JUMP, 0x00000314
+        
+         #  else
+        
+         #  {
+        
+         #  poolMenu._SelectTeams();
+        PUSH, poolMenu
+        PUSH, __10_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        
+         #  if (modeSelect)
+        PUSH, modeSelect
+        JUMP_IF_FALSE, 0x000004A4
+        
+         #  {
+        
+         #  if (isGamemodeMenuSwitched)
+        PUSH, isGamemodeMenuSwitched
+        JUMP_IF_FALSE, 0x000003EC
+        
+         #  {
+        
+         #  poolMenu._Select4BallJapanese();
+        PUSH, poolMenu
+        PUSH, __11_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        
+         #  if (logger) logger._Log(name, "Switched to 4Ball JPN");
+        PUSH, logger
+        PUSH, __0_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __0_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000003E4
+        PUSH, __0_this_intnl_VRCBilliardsUIAnimationManager
+        PUSH, __0_intnl_SystemString
+        EXTERN, "UnityEngineComponent.__get_name__SystemString"
+        PUSH, logger
+        PUSH, __13_const_intnl_SystemString
+        PUSH, __0_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, logger
+        PUSH, __14_const_intnl_SystemString
+        PUSH, __12_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, logger
+        PUSH, __15_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        JUMP, 0x0000049C
+        
+         #  else
+        
+         #  {
+        
+         #  poolMenu._Select8Ball();
+        PUSH, poolMenu
+        PUSH, __16_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        
+         #  if (logger) logger._Log(name, "Switched to 8Ball");
+        PUSH, logger
+        PUSH, __0_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __0_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x0000049C
+        PUSH, __0_this_intnl_VRCBilliardsUIAnimationManager
+        PUSH, __0_intnl_SystemString
+        EXTERN, "UnityEngineComponent.__get_name__SystemString"
+        PUSH, logger
+        PUSH, __13_const_intnl_SystemString
+        PUSH, __0_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, logger
+        PUSH, __14_const_intnl_SystemString
+        PUSH, __17_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, logger
+        PUSH, __15_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        JUMP, 0x0000061C
+        
+         #  else
+        
+         #  {
+        
+         #  if (isGamemodeMenuSwitched)
+        PUSH, isGamemodeMenuSwitched
+        JUMP_IF_FALSE, 0x0000056C
+        
+         #  {
+        
+         #  poolMenu._Select4BallKorean();
+        PUSH, poolMenu
+        PUSH, __18_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        
+         #  if (logger) logger._Log(name, "Switched to 4Ball KOR");
+        PUSH, logger
+        PUSH, __0_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __0_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000564
+        PUSH, __0_this_intnl_VRCBilliardsUIAnimationManager
+        PUSH, __0_intnl_SystemString
+        EXTERN, "UnityEngineComponent.__get_name__SystemString"
+        PUSH, logger
+        PUSH, __13_const_intnl_SystemString
+        PUSH, __0_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, logger
+        PUSH, __14_const_intnl_SystemString
+        PUSH, __19_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, logger
+        PUSH, __15_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        JUMP, 0x0000061C
+        
+         #  else
+        
+         #  {
+        
+         #  poolMenu._Select9Ball();
+        PUSH, poolMenu
+        PUSH, __20_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        
+         #  if (logger) logger._Log(name, "Switched to 9Ball");
+        PUSH, logger
+        PUSH, __0_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __0_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x0000061C
+        PUSH, __0_this_intnl_VRCBilliardsUIAnimationManager
+        PUSH, __0_intnl_SystemString
+        EXTERN, "UnityEngineComponent.__get_name__SystemString"
+        PUSH, logger
+        PUSH, __13_const_intnl_SystemString
+        PUSH, __0_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, logger
+        PUSH, __14_const_intnl_SystemString
+        PUSH, __21_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, logger
+        PUSH, __15_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+.code_end

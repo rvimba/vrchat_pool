@@ -1,0 +1,3469 @@
+.data_start
+
+    .export selectedColor
+    .export unselectedColor
+    .export useUnityUI
+    .export player1UIButton
+    .export player2UIButton
+    .export player3UIButton
+    .export player4UIButton
+    .export resetGameButton
+    .export lockMenu
+    .export mainMenu
+    .export startGameButton
+    .export gameModeTxt
+    .export gameModeButtons
+    .export toggleGuideLineButtonsActive
+    .export guideLineEnableButton
+    .export guideLineDisableButton
+    .export guidelineStatus
+    .export guideLineButtons
+    .export timer
+    .export noTimerText
+    .export timerValueText
+    .export timerButton
+    .export noTimerButton
+    .export visibleTimerDuringGame
+    .export timerCountdown
+    .export timerOutputFormat
+    .export teamsTxt
+    .export teamsButtons
+    .export player1Button
+    .export player2Button
+    .export player3Button
+    .export player4Button
+    .export leaveButton
+    .export defaultEmptyPlayerSlotText
+    .export player1MenuText
+    .export player2MenuText
+    .export player3MenuText
+    .export player4MenuText
+    .export inGameScoreDisplay
+    .export tableInfoScreen
+    .export scores
+    .export player1Score
+    .export player2Score
+    .export player3Score
+    .export player4Score
+    .export teamAScore
+    .export teamBScore
+    .export winnerText
+    .export defaultEmptyplayerSlotTextWithUdonChips
+
+    __refl_const_intnl_udonTypeID: %SystemInt64, null
+    __refl_const_intnl_udonTypeName: %SystemString, null
+    toggleGuideLineButtonsActive: %SystemBoolean, null
+    useUnityUI: %SystemBoolean, null
+    player4UIButton: %UnityEngineUIButton, null
+    player3UIButton: %UnityEngineUIButton, null
+    player2UIButton: %UnityEngineUIButton, null
+    player1UIButton: %UnityEngineUIButton, null
+    unselectedColor: %UnityEngineColor, null
+    selectedColor: %UnityEngineColor, null
+    teamBScore: %UnityEngineGameObject, null
+    teamAScore: %UnityEngineGameObject, null
+    player4Score: %UnityEngineGameObject, null
+    player3Score: %UnityEngineGameObject, null
+    player2Score: %UnityEngineGameObject, null
+    player1Score: %UnityEngineGameObject, null
+    tableInfoScreen: %UnityEngineGameObject, null
+    inGameScoreDisplay: %UnityEngineGameObject, null
+    leaveButton: %UnityEngineGameObject, null
+    player4Button: %UnityEngineGameObject, null
+    player3Button: %UnityEngineGameObject, null
+    player2Button: %UnityEngineGameObject, null
+    player1Button: %UnityEngineGameObject, null
+    guideLineDisableButton: %UnityEngineGameObject, null
+    guideLineEnableButton: %UnityEngineGameObject, null
+    startGameButton: %UnityEngineGameObject, null
+    mainMenu: %UnityEngineGameObject, null
+    lockMenu: %UnityEngineGameObject, null
+    resetGameButton: %UnityEngineGameObject, null
+    scores: %UnityEngineGameObjectArray, null
+    timerCountdown: %UnityEngineUIImage, null
+    noTimerButton: %UnityEngineUIImage, null
+    timerButton: %UnityEngineUIImage, null
+    teamsButtons: %UnityEngineUIImageArray, null
+    guideLineButtons: %UnityEngineUIImageArray, null
+    gameModeButtons: %UnityEngineUIImageArray, null
+    defaultEmptyplayerSlotTextWithUdonChips: %SystemString, null
+    defaultEmptyPlayerSlotText: %SystemString, null
+    timerOutputFormat: %SystemString, null
+    timerValueText: %SystemString, null
+    noTimerText: %SystemString, null
+    winnerText: %TMProTextMeshProUGUI, null
+    player4MenuText: %TMProTextMeshProUGUI, null
+    player3MenuText: %TMProTextMeshProUGUI, null
+    player2MenuText: %TMProTextMeshProUGUI, null
+    player1MenuText: %TMProTextMeshProUGUI, null
+    teamsTxt: %TMProTextMeshProUGUI, null
+    visibleTimerDuringGame: %TMProTextMeshProUGUI, null
+    timer: %TMProTextMeshProUGUI, null
+    guidelineStatus: %TMProTextMeshProUGUI, null
+    gameModeTxt: %TMProTextMeshProUGUI, null
+    canStartGame: %SystemBoolean, null
+    isSignedUpToPlay: %SystemBoolean, null
+    isTeams: %SystemBoolean, null
+    teamBScores: %TMProTextMeshProUGUIArray, null
+    teamAScores: %TMProTextMeshProUGUIArray, null
+    player4Scores: %TMProTextMeshProUGUIArray, null
+    player3Scores: %TMProTextMeshProUGUIArray, null
+    player2Scores: %TMProTextMeshProUGUIArray, null
+    player1Scores: %TMProTextMeshProUGUIArray, null
+    manager: %VRCUdonUdonBehaviour, null
+    __0_this_intnl_UnityEngineGameObject: %UnityEngineGameObject, this
+    __0_this_intnl_UnityEngineTransform: %UnityEngineTransform, this
+    __0_this_intnl_VRCBilliardsPoolMenu: %VRCUdonUdonBehaviour, this
+    __0_found_Boolean: %SystemBoolean, null
+    __1_mp_isTeam2_Boolean: %SystemBoolean, null
+    __0_mp_isTeam2_Boolean: %SystemBoolean, null
+    __0_mp_guideline_Boolean: %SystemBoolean, null
+    __0_mp_isKorean4Ball_Boolean: %SystemBoolean, null
+    __0_mp_isTeam2Playing_Boolean: %SystemBoolean, null
+    __0_mp_newIsTeams_Boolean: %SystemBoolean, null
+    __0_mp_buttons_ImageArray: %UnityEngineUIImageArray, null
+    __0_id_Int32: %SystemInt32, null
+    __1_i_Int32: %SystemInt32, null
+    __0_i_Int32: %SystemInt32, null
+    __0_mp_score_Int32: %SystemInt32, null
+    __0_mp_player4ID_Int32: %SystemInt32, null
+    __0_mp_player3ID_Int32: %SystemInt32, null
+    __0_mp_player2ID_Int32: %SystemInt32, null
+    __0_mp_player1ID_Int32: %SystemInt32, null
+    __0_mp_timerMode_Int32: %SystemInt32, null
+    __0_mp_gameMode_Int32: %SystemInt32, null
+    __0_mp_selectedIndex_Int32: %SystemInt32, null
+    __0_defaultText_String: %SystemString, null
+    __2_score_TextMeshProUGUI: %TMProTextMeshProUGUI, null
+    __0_scoreText_TextMeshProUGUI: %TMProTextMeshProUGUI, null
+    __1_score_TextMeshProUGUI: %TMProTextMeshProUGUI, null
+    __0_score_TextMeshProUGUI: %TMProTextMeshProUGUI, null
+    __0_mp_menuText_TextMeshProUGUI: %TMProTextMeshProUGUI, null
+    __0_mp_scores_TextMeshProUGUIArray: %TMProTextMeshProUGUIArray, null
+    __0_mp_player_VRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null
+    __1_const_intnl_SystemBoolean: %SystemBoolean, null
+    __0_const_intnl_SystemBoolean: %SystemBoolean, null
+    __0_const_intnl_UnityEngineUIImage: %UnityEngineUIImage, null
+    __0_const_intnl_UnityEngineUIImageArray: %UnityEngineUIImageArray, null
+    __4_const_intnl_SystemInt32: %SystemInt32, null
+    __3_const_intnl_SystemInt32: %SystemInt32, null
+    __2_const_intnl_SystemInt32: %SystemInt32, null
+    __1_const_intnl_SystemInt32: %SystemInt32, null
+    __0_const_intnl_SystemInt32: %SystemInt32, null
+    __1_const_intnl_SystemInt64: %SystemInt64, null
+    __0_const_intnl_SystemInt64: %SystemInt64, null
+    __0_const_intnl_SystemObject: %SystemObject, null
+    __57_const_intnl_SystemString: %SystemString, null
+    __56_const_intnl_SystemString: %SystemString, null
+    __55_const_intnl_SystemString: %SystemString, null
+    __54_const_intnl_SystemString: %SystemString, null
+    __53_const_intnl_SystemString: %SystemString, null
+    __52_const_intnl_SystemString: %SystemString, null
+    __51_const_intnl_SystemString: %SystemString, null
+    __50_const_intnl_SystemString: %SystemString, null
+    __49_const_intnl_SystemString: %SystemString, null
+    __48_const_intnl_SystemString: %SystemString, null
+    __47_const_intnl_SystemString: %SystemString, null
+    __46_const_intnl_SystemString: %SystemString, null
+    __45_const_intnl_SystemString: %SystemString, null
+    __44_const_intnl_SystemString: %SystemString, null
+    __43_const_intnl_SystemString: %SystemString, null
+    __42_const_intnl_SystemString: %SystemString, null
+    __41_const_intnl_SystemString: %SystemString, null
+    __40_const_intnl_SystemString: %SystemString, null
+    __39_const_intnl_SystemString: %SystemString, null
+    __38_const_intnl_SystemString: %SystemString, null
+    __37_const_intnl_SystemString: %SystemString, null
+    __36_const_intnl_SystemString: %SystemString, null
+    __35_const_intnl_SystemString: %SystemString, null
+    __34_const_intnl_SystemString: %SystemString, null
+    __33_const_intnl_SystemString: %SystemString, null
+    __32_const_intnl_SystemString: %SystemString, null
+    __31_const_intnl_SystemString: %SystemString, null
+    __30_const_intnl_SystemString: %SystemString, null
+    __29_const_intnl_SystemString: %SystemString, null
+    __28_const_intnl_SystemString: %SystemString, null
+    __27_const_intnl_SystemString: %SystemString, null
+    __26_const_intnl_SystemString: %SystemString, null
+    __25_const_intnl_SystemString: %SystemString, null
+    __24_const_intnl_SystemString: %SystemString, null
+    __23_const_intnl_SystemString: %SystemString, null
+    __22_const_intnl_SystemString: %SystemString, null
+    __21_const_intnl_SystemString: %SystemString, null
+    __20_const_intnl_SystemString: %SystemString, null
+    __19_const_intnl_SystemString: %SystemString, null
+    __18_const_intnl_SystemString: %SystemString, null
+    __17_const_intnl_SystemString: %SystemString, null
+    __16_const_intnl_SystemString: %SystemString, null
+    __15_const_intnl_SystemString: %SystemString, null
+    __14_const_intnl_SystemString: %SystemString, null
+    __13_const_intnl_SystemString: %SystemString, null
+    __12_const_intnl_SystemString: %SystemString, null
+    __11_const_intnl_SystemString: %SystemString, null
+    __10_const_intnl_SystemString: %SystemString, null
+    __9_const_intnl_SystemString: %SystemString, null
+    __8_const_intnl_SystemString: %SystemString, null
+    __7_const_intnl_SystemString: %SystemString, null
+    __6_const_intnl_SystemString: %SystemString, null
+    __5_const_intnl_SystemString: %SystemString, null
+    __4_const_intnl_SystemString: %SystemString, null
+    __3_const_intnl_SystemString: %SystemString, null
+    __2_const_intnl_SystemString: %SystemString, null
+    __1_const_intnl_SystemString: %SystemString, null
+    __0_const_intnl_SystemString: %SystemString, null
+    __1_const_intnl_SystemType: %SystemType, null
+    __0_const_intnl_SystemType: %SystemType, null
+    __0_const_intnl_VRCBilliardsPoolStateManager: %VRCUdonUdonBehaviour, null
+    __11_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __10_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __9_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __8_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __7_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __6_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __5_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __4_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __3_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __2_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __1_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __0_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __0_const_intnl_SystemUInt32: %SystemUInt32, null
+    __62_intnl_SystemBoolean: %SystemBoolean, null
+    __61_intnl_SystemBoolean: %SystemBoolean, null
+    __60_intnl_SystemBoolean: %SystemBoolean, null
+    __59_intnl_SystemBoolean: %SystemBoolean, null
+    __58_intnl_SystemBoolean: %SystemBoolean, null
+    __57_intnl_SystemBoolean: %SystemBoolean, null
+    __56_intnl_SystemBoolean: %SystemBoolean, null
+    __55_intnl_SystemBoolean: %SystemBoolean, null
+    __54_intnl_SystemBoolean: %SystemBoolean, null
+    __53_intnl_SystemBoolean: %SystemBoolean, null
+    __52_intnl_SystemBoolean: %SystemBoolean, null
+    __51_intnl_SystemBoolean: %SystemBoolean, null
+    __50_intnl_SystemBoolean: %SystemBoolean, null
+    __49_intnl_SystemBoolean: %SystemBoolean, null
+    __48_intnl_SystemBoolean: %SystemBoolean, null
+    __47_intnl_SystemBoolean: %SystemBoolean, null
+    __46_intnl_SystemBoolean: %SystemBoolean, null
+    __45_intnl_SystemBoolean: %SystemBoolean, null
+    __44_intnl_SystemBoolean: %SystemBoolean, null
+    __43_intnl_SystemBoolean: %SystemBoolean, null
+    __42_intnl_SystemBoolean: %SystemBoolean, null
+    __41_intnl_SystemBoolean: %SystemBoolean, null
+    __40_intnl_SystemBoolean: %SystemBoolean, null
+    __39_intnl_SystemBoolean: %SystemBoolean, null
+    __38_intnl_SystemBoolean: %SystemBoolean, null
+    __37_intnl_SystemBoolean: %SystemBoolean, null
+    __36_intnl_SystemBoolean: %SystemBoolean, null
+    __35_intnl_SystemBoolean: %SystemBoolean, null
+    __34_intnl_SystemBoolean: %SystemBoolean, null
+    __33_intnl_SystemBoolean: %SystemBoolean, null
+    __32_intnl_SystemBoolean: %SystemBoolean, null
+    __31_intnl_SystemBoolean: %SystemBoolean, null
+    __30_intnl_SystemBoolean: %SystemBoolean, null
+    __29_intnl_SystemBoolean: %SystemBoolean, null
+    __28_intnl_SystemBoolean: %SystemBoolean, null
+    __27_intnl_SystemBoolean: %SystemBoolean, null
+    __26_intnl_SystemBoolean: %SystemBoolean, null
+    __25_intnl_SystemBoolean: %SystemBoolean, null
+    __24_intnl_SystemBoolean: %SystemBoolean, null
+    __23_intnl_SystemBoolean: %SystemBoolean, null
+    __22_intnl_SystemBoolean: %SystemBoolean, null
+    __21_intnl_SystemBoolean: %SystemBoolean, null
+    __20_intnl_SystemBoolean: %SystemBoolean, null
+    __19_intnl_SystemBoolean: %SystemBoolean, null
+    __18_intnl_SystemBoolean: %SystemBoolean, null
+    __17_intnl_SystemBoolean: %SystemBoolean, null
+    __16_intnl_SystemBoolean: %SystemBoolean, null
+    __15_intnl_SystemBoolean: %SystemBoolean, null
+    __14_intnl_SystemBoolean: %SystemBoolean, null
+    __13_intnl_SystemBoolean: %SystemBoolean, null
+    __12_intnl_SystemBoolean: %SystemBoolean, null
+    __11_intnl_SystemBoolean: %SystemBoolean, null
+    __10_intnl_SystemBoolean: %SystemBoolean, null
+    __9_intnl_SystemBoolean: %SystemBoolean, null
+    __8_intnl_SystemBoolean: %SystemBoolean, null
+    __7_intnl_SystemBoolean: %SystemBoolean, null
+    __6_intnl_SystemBoolean: %SystemBoolean, null
+    __5_intnl_SystemBoolean: %SystemBoolean, null
+    __4_intnl_SystemBoolean: %SystemBoolean, null
+    __3_intnl_SystemBoolean: %SystemBoolean, null
+    __2_intnl_SystemBoolean: %SystemBoolean, null
+    __1_intnl_SystemBoolean: %SystemBoolean, null
+    __0_intnl_SystemBoolean: %SystemBoolean, null
+    __0_intnl_returnValSymbol_Boolean: %SystemBoolean, null
+    __2_intnl_UnityEngineColor: %UnityEngineColor, null
+    __1_intnl_UnityEngineColor: %UnityEngineColor, null
+    __0_intnl_UnityEngineColor: %UnityEngineColor, null
+    __0_intnl_UnityEngineComponent: %UnityEngineComponent, null
+    __0_intnl_UnityEngineComponentArray: %UnityEngineComponentArray, null
+    __5_intnl_UnityEngineGameObject: %UnityEngineGameObject, null
+    __4_intnl_UnityEngineGameObject: %UnityEngineGameObject, null
+    __3_intnl_UnityEngineGameObject: %UnityEngineGameObject, null
+    __2_intnl_UnityEngineGameObject: %UnityEngineGameObject, null
+    __1_intnl_UnityEngineGameObject: %UnityEngineGameObject, null
+    __0_intnl_UnityEngineGameObject: %UnityEngineGameObject, null
+    __1_intnl_UnityEngineUIImage: %UnityEngineUIImage, null
+    __0_intnl_UnityEngineUIImage: %UnityEngineUIImage, null
+    __1_intnl_UnityEngineUIImageArray: %UnityEngineUIImageArray, null
+    __0_intnl_UnityEngineUIImageArray: %UnityEngineUIImageArray, null
+    __19_intnl_SystemInt32: %SystemInt32, null
+    __18_intnl_SystemInt32: %SystemInt32, null
+    __17_intnl_SystemInt32: %SystemInt32, null
+    __16_intnl_SystemInt32: %SystemInt32, null
+    __15_intnl_SystemInt32: %SystemInt32, null
+    __14_intnl_SystemInt32: %SystemInt32, null
+    __13_intnl_SystemInt32: %SystemInt32, null
+    __12_intnl_SystemInt32: %SystemInt32, null
+    __11_intnl_SystemInt32: %SystemInt32, null
+    __10_intnl_SystemInt32: %SystemInt32, null
+    __9_intnl_SystemInt32: %SystemInt32, null
+    __8_intnl_SystemInt32: %SystemInt32, null
+    __7_intnl_SystemInt32: %SystemInt32, null
+    __6_intnl_SystemInt32: %SystemInt32, null
+    __5_intnl_SystemInt32: %SystemInt32, null
+    __4_intnl_SystemInt32: %SystemInt32, null
+    __3_intnl_SystemInt32: %SystemInt32, null
+    __2_intnl_SystemInt32: %SystemInt32, null
+    __1_intnl_SystemInt32: %SystemInt32, null
+    __0_intnl_SystemInt32: %SystemInt32, null
+    __1_intnl_SystemInt64: %SystemInt64, null
+    __0_intnl_SystemInt64: %SystemInt64, null
+    __5_intnl_SystemObject: %SystemObject, null
+    __4_intnl_SystemObject: %SystemObject, null
+    __3_intnl_SystemObject: %SystemObject, null
+    __2_intnl_SystemObject: %SystemObject, null
+    __1_intnl_SystemObject: %SystemObject, null
+    __0_intnl_SystemObject: %SystemObject, null
+    __3_intnl_SystemSingle: %SystemSingle, null
+    __2_intnl_SystemSingle: %SystemSingle, null
+    __1_intnl_SystemSingle: %SystemSingle, null
+    __0_intnl_SystemSingle: %SystemSingle, null
+    __18_intnl_SystemString: %SystemString, null
+    __17_intnl_SystemString: %SystemString, null
+    __16_intnl_SystemString: %SystemString, null
+    __15_intnl_SystemString: %SystemString, null
+    __14_intnl_SystemString: %SystemString, null
+    __2_intnl_interpolatedStr_String: %SystemString, null
+    __13_intnl_SystemString: %SystemString, null
+    __1_intnl_interpolatedStr_String: %SystemString, null
+    __12_intnl_SystemString: %SystemString, null
+    __11_intnl_SystemString: %SystemString, null
+    __10_intnl_SystemString: %SystemString, null
+    __9_intnl_SystemString: %SystemString, null
+    __8_intnl_SystemString: %SystemString, null
+    __7_intnl_SystemString: %SystemString, null
+    __6_intnl_SystemString: %SystemString, null
+    __5_intnl_SystemString: %SystemString, null
+    __4_intnl_SystemString: %SystemString, null
+    __3_intnl_SystemString: %SystemString, null
+    __2_intnl_SystemString: %SystemString, null
+    __1_intnl_SystemString: %SystemString, null
+    __0_intnl_SystemString: %SystemString, null
+    __0_intnl_interpolatedStr_String: %SystemString, null
+    __8_intnl_TMProTextMeshProUGUI: %TMProTextMeshProUGUI, null
+    __7_intnl_TMProTextMeshProUGUI: %TMProTextMeshProUGUI, null
+    __6_intnl_TMProTextMeshProUGUI: %TMProTextMeshProUGUI, null
+    __5_intnl_TMProTextMeshProUGUI: %TMProTextMeshProUGUI, null
+    __4_intnl_TMProTextMeshProUGUI: %TMProTextMeshProUGUI, null
+    __3_intnl_TMProTextMeshProUGUI: %TMProTextMeshProUGUI, null
+    __2_intnl_TMProTextMeshProUGUI: %TMProTextMeshProUGUI, null
+    __1_intnl_TMProTextMeshProUGUI: %TMProTextMeshProUGUI, null
+    __0_intnl_TMProTextMeshProUGUI: %TMProTextMeshProUGUI, null
+    __0_intnl_TMProTextMeshProUGUIArray: %TMProTextMeshProUGUIArray, null
+    __18_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __17_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __16_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __15_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __14_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __13_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __12_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __11_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __10_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __9_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __8_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __7_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __6_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __5_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __4_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __3_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __2_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __1_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __0_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __1_intnl_VRCBilliardsPoolStateManager: %VRCUdonUdonBehaviour, null
+    __0_intnl_VRCBilliardsPoolStateManager: %VRCUdonUdonBehaviour, null
+    __0_intnl_returnTarget_UInt32: %SystemUInt32, null
+    __1_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null
+    __0_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null
+
+.data_end
+
+        
+         #  using TMPro;
+        
+         #  using UdonSharp;
+        
+         #  using UnityEngine;
+        
+         #  using UnityEngine.UI;
+        
+         #  using VRC.SDKBase;
+        
+         #  using VRC.Udon;
+        
+         #  namespace VRCBilliards
+        
+         #  [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
+        
+         #  public class PoolMenu : UdonSharpBehaviour
+.code_start
+        
+         #  private PoolStateManager manager;
+        
+         #  [Header("Style")]
+        
+         #  public Color unselectedColor = Color.gray;
+        
+         #  [Header("Menu / Buttons")]
+        
+         #  public Button player1UIButton;
+        
+         #  public Button player2UIButton;
+        
+         #  public Button player3UIButton;
+        
+         #  public Button player4UIButton;
+        
+         #  public GameObject resetGameButton;
+        
+         #  public GameObject lockMenu;
+        
+         #  public GameObject mainMenu;
+        
+         #  public GameObject startGameButton;
+        
+         #  [Header("Game Mode")]
+        
+         #  public Image[] gameModeButtons = { };
+        
+         #  [Header("Guide Line")]
+        
+         #  public GameObject guideLineEnableButton;
+        
+         #  public GameObject guideLineDisableButton;
+        
+         #  public TextMeshProUGUI guidelineStatus;
+        
+         #  public Image[] guideLineButtons = { };
+        
+         #  [Header("Timer")]
+        
+         #  public string noTimerText = "No Limit";
+        
+         #  public string timerValueText = "{}s Limit";
+        
+         #  public Image timerButton, noTimerButton;
+        
+         #  public TextMeshProUGUI visibleTimerDuringGame;
+        
+         #  public Image timerCountdown;
+        
+         #  public string timerOutputFormat = "{} seconds remaining";
+        
+         #  [Header("Teams")]
+        
+         #  public Image[] teamsButtons = { };
+        
+         #  [Header("Players")]
+        
+         #  public GameObject player2Button;
+        
+         #  public GameObject player3Button;
+        
+         #  public GameObject player4Button;
+        
+         #  public GameObject leaveButton;
+        
+         #  public string defaultEmptyPlayerSlotText = "<color=grey>Player {}</color>";
+        
+         #  public TextMeshProUGUI player1MenuText;
+        
+         #  public TextMeshProUGUI player2MenuText;
+        
+         #  public TextMeshProUGUI player3MenuText;
+        
+         #  public TextMeshProUGUI player4MenuText;
+        
+         #  [Header("Score")]
+        
+         #  [Tooltip("The table information screen. This will be hidden during games if the in-game score display is populated.")]
+        
+         #  public GameObject[] scores;
+        
+         #  public GameObject player1Score;
+        
+         #  public GameObject player2Score;
+        
+         #  public GameObject player3Score;
+        
+         #  public GameObject player4Score;
+        
+         #  public GameObject teamAScore;
+        
+         #  public GameObject teamBScore;
+        
+         #  private TextMeshProUGUI[] player1Scores;
+        
+         #  private TextMeshProUGUI[] player2Scores;
+        
+         #  private TextMeshProUGUI[] player3Scores;
+        
+         #  private TextMeshProUGUI[] player4Scores;
+        
+         #  private TextMeshProUGUI[] teamAScores;
+        
+         #  private TextMeshProUGUI[] teamBScores;
+        
+         #  public TextMeshProUGUI winnerText;
+        
+         #  [Header("UdonChips Integration")]
+        
+         #  private bool isTeams;
+        
+         #  private bool isSignedUpToPlay;
+        
+         #  private bool canStartGame;
+        
+         #  public void Start()
+    .export _start
+        
+    _start:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  manager = transform.parent.GetComponentInChildren<PoolStateManager>();
+        PUSH, __0_this_intnl_UnityEngineTransform
+        PUSH, __0_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__get_parent__UnityEngineTransform"
+        PUSH, __0_intnl_UnityEngineTransform
+        PUSH, __0_const_intnl_SystemType
+        PUSH, __0_intnl_UnityEngineComponentArray
+        EXTERN, "UnityEngineComponent.__GetComponentsInChildren__SystemType__UnityEngineComponentArray"
+        PUSH, __0_const_intnl_VRCBilliardsPoolStateManager
+        PUSH, __0_intnl_VRCBilliardsPoolStateManager
+        COPY
+        PUSH, __0_intnl_UnityEngineComponentArray
+        PUSH, __0_intnl_SystemInt32
+        EXTERN, "UnityEngineComponentArray.__get_Length__SystemInt32"
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __1_intnl_SystemInt32
+        COPY
+        PUSH, __1_intnl_SystemInt32
+        PUSH, __0_intnl_SystemInt32
+        PUSH, __0_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __0_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000204
+        PUSH, __0_intnl_UnityEngineComponentArray
+        PUSH, __1_intnl_SystemInt32
+        PUSH, __0_intnl_UnityEngineComponent
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __0_intnl_UnityEngineComponent
+        PUSH, __1_intnl_VRCBilliardsPoolStateManager
+        COPY
+        PUSH, __1_intnl_VRCBilliardsPoolStateManager
+        PUSH, __11_const_intnl_SystemString
+        PUSH, __0_intnl_SystemObject
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __0_intnl_SystemObject
+        PUSH, __0_const_intnl_SystemObject
+        PUSH, __1_intnl_SystemBoolean
+        EXTERN, "SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean"
+        PUSH, __1_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000168
+        PUSH, __0_intnl_SystemObject
+        PUSH, __1_intnl_SystemInt64
+        EXTERN, "SystemConvert.__ToInt64__SystemObject__SystemInt64"
+        PUSH, __1_intnl_SystemInt64
+        PUSH, __0_intnl_SystemInt64
+        COPY
+        JUMP, 0x0000017C
+        PUSH, __1_const_intnl_SystemInt64
+        PUSH, __0_intnl_SystemInt64
+        COPY
+        PUSH, __0_intnl_SystemInt64
+        PUSH, __0_const_intnl_SystemInt64
+        PUSH, __2_intnl_SystemBoolean
+        EXTERN, "SystemInt64.__op_Equality__SystemInt64_SystemInt64__SystemBoolean"
+        PUSH, __2_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000001C8
+        PUSH, __1_intnl_VRCBilliardsPoolStateManager
+        PUSH, __0_intnl_VRCBilliardsPoolStateManager
+        COPY
+        JUMP, 0x00000204
+        PUSH, __1_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __2_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __2_intnl_SystemInt32
+        PUSH, __1_intnl_SystemInt32
+        COPY
+        JUMP, 0x00000080
+        PUSH, __0_intnl_VRCBilliardsPoolStateManager
+        PUSH, manager
+        COPY
+        
+         #  if (!manager)
+        PUSH, manager
+        PUSH, __0_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __0_intnl_SystemBoolean
+        PUSH, __1_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __1_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000328
+        
+         #  {
+        
+         #  Debug.LogError($"A VRCBCE menu, {name}, cannot start because it cannot find a PoolStateManager in the children of its parent!");
+        PUSH, __12_const_intnl_SystemString
+        PUSH, __0_intnl_interpolatedStr_String
+        COPY
+        PUSH, __0_this_intnl_VRCBilliardsPoolMenu
+        PUSH, __0_intnl_SystemString
+        EXTERN, "UnityEngineComponent.__get_name__SystemString"
+        PUSH, __0_intnl_interpolatedStr_String
+        PUSH, __0_intnl_SystemString
+        PUSH, __1_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __1_intnl_SystemString
+        PUSH, __0_intnl_interpolatedStr_String
+        COPY
+        PUSH, __0_intnl_interpolatedStr_String
+        PUSH, __13_const_intnl_SystemString
+        PUSH, __2_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __2_intnl_SystemString
+        PUSH, __0_intnl_interpolatedStr_String
+        COPY
+        PUSH, __0_intnl_interpolatedStr_String
+        EXTERN, "UnityEngineDebug.__LogError__SystemObject__SystemVoid"
+        
+         #  gameObject.SetActive(false);
+        PUSH, __0_this_intnl_UnityEngineGameObject
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  return;
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+         #  player1Scores = new TextMeshProUGUI[scores.Length];
+        PUSH, scores
+        PUSH, __0_intnl_SystemInt32
+        EXTERN, "UnityEngineGameObjectArray.__get_Length__SystemInt32"
+        PUSH, __0_intnl_SystemInt32
+        PUSH, player1Scores
+        EXTERN, "TMProTextMeshProUGUIArray.__ctor__SystemInt32__TMProTextMeshProUGUIArray"
+        
+         #  player2Scores = new TextMeshProUGUI[scores.Length];
+        PUSH, scores
+        PUSH, __1_intnl_SystemInt32
+        EXTERN, "UnityEngineGameObjectArray.__get_Length__SystemInt32"
+        PUSH, __1_intnl_SystemInt32
+        PUSH, player2Scores
+        EXTERN, "TMProTextMeshProUGUIArray.__ctor__SystemInt32__TMProTextMeshProUGUIArray"
+        
+         #  player3Scores = new TextMeshProUGUI[scores.Length];
+        PUSH, scores
+        PUSH, __2_intnl_SystemInt32
+        EXTERN, "UnityEngineGameObjectArray.__get_Length__SystemInt32"
+        PUSH, __2_intnl_SystemInt32
+        PUSH, player3Scores
+        EXTERN, "TMProTextMeshProUGUIArray.__ctor__SystemInt32__TMProTextMeshProUGUIArray"
+        
+         #  player4Scores = new TextMeshProUGUI[scores.Length];
+        PUSH, scores
+        PUSH, __3_intnl_SystemInt32
+        EXTERN, "UnityEngineGameObjectArray.__get_Length__SystemInt32"
+        PUSH, __3_intnl_SystemInt32
+        PUSH, player4Scores
+        EXTERN, "TMProTextMeshProUGUIArray.__ctor__SystemInt32__TMProTextMeshProUGUIArray"
+        
+         #  teamAScores = new TextMeshProUGUI[scores.Length];
+        PUSH, scores
+        PUSH, __4_intnl_SystemInt32
+        EXTERN, "UnityEngineGameObjectArray.__get_Length__SystemInt32"
+        PUSH, __4_intnl_SystemInt32
+        PUSH, teamAScores
+        EXTERN, "TMProTextMeshProUGUIArray.__ctor__SystemInt32__TMProTextMeshProUGUIArray"
+        
+         #  teamBScores = new TextMeshProUGUI[scores.Length];
+        PUSH, scores
+        PUSH, __5_intnl_SystemInt32
+        EXTERN, "UnityEngineGameObjectArray.__get_Length__SystemInt32"
+        PUSH, __5_intnl_SystemInt32
+        PUSH, teamBScores
+        EXTERN, "TMProTextMeshProUGUIArray.__ctor__SystemInt32__TMProTextMeshProUGUIArray"
+        
+         #  for (int i = 0; i < scores.Length; i++)
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __0_i_Int32
+        COPY
+        PUSH, scores
+        PUSH, __6_intnl_SystemInt32
+        EXTERN, "UnityEngineGameObjectArray.__get_Length__SystemInt32"
+        PUSH, __0_i_Int32
+        PUSH, __6_intnl_SystemInt32
+        PUSH, __2_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __2_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000990
+        
+         #  {
+        
+         #  player1Scores[i] = scores[i].transform.Find(player1Score.name).GetComponent<TextMeshProUGUI>();
+        PUSH, scores
+        PUSH, __0_i_Int32
+        PUSH, __0_intnl_UnityEngineGameObject
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __0_intnl_UnityEngineGameObject
+        PUSH, __1_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, player1Score
+        PUSH, __0_intnl_SystemString
+        EXTERN, "UnityEngineGameObject.__get_name__SystemString"
+        PUSH, __1_intnl_UnityEngineTransform
+        PUSH, __0_intnl_SystemString
+        PUSH, __2_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__Find__SystemString__UnityEngineTransform"
+        PUSH, __2_intnl_UnityEngineTransform
+        PUSH, __3_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineComponent.__get_transform__UnityEngineTransform" # GetComponent strongbox mismatch fix
+        PUSH, __3_intnl_UnityEngineTransform
+        PUSH, __1_const_intnl_SystemType
+        PUSH, __0_intnl_TMProTextMeshProUGUI
+        EXTERN, "TMProTextMeshProUGUI.__GetComponent__T"
+        PUSH, player1Scores
+        PUSH, __0_i_Int32
+        PUSH, __0_intnl_TMProTextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Set__SystemInt32_SystemObject__SystemVoid"
+        
+         #  player2Scores[i] = scores[i].transform.Find(player2Score.name).GetComponent<TextMeshProUGUI>();
+        PUSH, scores
+        PUSH, __0_i_Int32
+        PUSH, __1_intnl_UnityEngineGameObject
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __1_intnl_UnityEngineGameObject
+        PUSH, __4_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, player2Score
+        PUSH, __1_intnl_SystemString
+        EXTERN, "UnityEngineGameObject.__get_name__SystemString"
+        PUSH, __4_intnl_UnityEngineTransform
+        PUSH, __1_intnl_SystemString
+        PUSH, __5_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__Find__SystemString__UnityEngineTransform"
+        PUSH, __5_intnl_UnityEngineTransform
+        PUSH, __6_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineComponent.__get_transform__UnityEngineTransform" # GetComponent strongbox mismatch fix
+        PUSH, __6_intnl_UnityEngineTransform
+        PUSH, __1_const_intnl_SystemType
+        PUSH, __1_intnl_TMProTextMeshProUGUI
+        EXTERN, "TMProTextMeshProUGUI.__GetComponent__T"
+        PUSH, player2Scores
+        PUSH, __0_i_Int32
+        PUSH, __1_intnl_TMProTextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Set__SystemInt32_SystemObject__SystemVoid"
+        
+         #  player3Scores[i] = scores[i].transform.Find(player3Score.name).GetComponent<TextMeshProUGUI>();
+        PUSH, scores
+        PUSH, __0_i_Int32
+        PUSH, __2_intnl_UnityEngineGameObject
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __2_intnl_UnityEngineGameObject
+        PUSH, __7_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, player3Score
+        PUSH, __2_intnl_SystemString
+        EXTERN, "UnityEngineGameObject.__get_name__SystemString"
+        PUSH, __7_intnl_UnityEngineTransform
+        PUSH, __2_intnl_SystemString
+        PUSH, __8_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__Find__SystemString__UnityEngineTransform"
+        PUSH, __8_intnl_UnityEngineTransform
+        PUSH, __9_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineComponent.__get_transform__UnityEngineTransform" # GetComponent strongbox mismatch fix
+        PUSH, __9_intnl_UnityEngineTransform
+        PUSH, __1_const_intnl_SystemType
+        PUSH, __2_intnl_TMProTextMeshProUGUI
+        EXTERN, "TMProTextMeshProUGUI.__GetComponent__T"
+        PUSH, player3Scores
+        PUSH, __0_i_Int32
+        PUSH, __2_intnl_TMProTextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Set__SystemInt32_SystemObject__SystemVoid"
+        
+         #  player4Scores[i] = scores[i].transform.Find(player4Score.name).GetComponent<TextMeshProUGUI>();
+        PUSH, scores
+        PUSH, __0_i_Int32
+        PUSH, __3_intnl_UnityEngineGameObject
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __3_intnl_UnityEngineGameObject
+        PUSH, __10_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, player4Score
+        PUSH, __3_intnl_SystemString
+        EXTERN, "UnityEngineGameObject.__get_name__SystemString"
+        PUSH, __10_intnl_UnityEngineTransform
+        PUSH, __3_intnl_SystemString
+        PUSH, __11_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__Find__SystemString__UnityEngineTransform"
+        PUSH, __11_intnl_UnityEngineTransform
+        PUSH, __12_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineComponent.__get_transform__UnityEngineTransform" # GetComponent strongbox mismatch fix
+        PUSH, __12_intnl_UnityEngineTransform
+        PUSH, __1_const_intnl_SystemType
+        PUSH, __3_intnl_TMProTextMeshProUGUI
+        EXTERN, "TMProTextMeshProUGUI.__GetComponent__T"
+        PUSH, player4Scores
+        PUSH, __0_i_Int32
+        PUSH, __3_intnl_TMProTextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Set__SystemInt32_SystemObject__SystemVoid"
+        
+         #  teamAScores[i] = scores[i].transform.Find(teamAScore.name).GetComponent<TextMeshProUGUI>();
+        PUSH, scores
+        PUSH, __0_i_Int32
+        PUSH, __4_intnl_UnityEngineGameObject
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __4_intnl_UnityEngineGameObject
+        PUSH, __13_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, teamAScore
+        PUSH, __4_intnl_SystemString
+        EXTERN, "UnityEngineGameObject.__get_name__SystemString"
+        PUSH, __13_intnl_UnityEngineTransform
+        PUSH, __4_intnl_SystemString
+        PUSH, __14_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__Find__SystemString__UnityEngineTransform"
+        PUSH, __14_intnl_UnityEngineTransform
+        PUSH, __15_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineComponent.__get_transform__UnityEngineTransform" # GetComponent strongbox mismatch fix
+        PUSH, __15_intnl_UnityEngineTransform
+        PUSH, __1_const_intnl_SystemType
+        PUSH, __4_intnl_TMProTextMeshProUGUI
+        EXTERN, "TMProTextMeshProUGUI.__GetComponent__T"
+        PUSH, teamAScores
+        PUSH, __0_i_Int32
+        PUSH, __4_intnl_TMProTextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Set__SystemInt32_SystemObject__SystemVoid"
+        
+         #  teamBScores[i] = scores[i].transform.Find(teamBScore.name).GetComponent<TextMeshProUGUI>();
+        PUSH, scores
+        PUSH, __0_i_Int32
+        PUSH, __5_intnl_UnityEngineGameObject
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __5_intnl_UnityEngineGameObject
+        PUSH, __16_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, teamBScore
+        PUSH, __5_intnl_SystemString
+        EXTERN, "UnityEngineGameObject.__get_name__SystemString"
+        PUSH, __16_intnl_UnityEngineTransform
+        PUSH, __5_intnl_SystemString
+        PUSH, __17_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__Find__SystemString__UnityEngineTransform"
+        PUSH, __17_intnl_UnityEngineTransform
+        PUSH, __18_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineComponent.__get_transform__UnityEngineTransform" # GetComponent strongbox mismatch fix
+        PUSH, __18_intnl_UnityEngineTransform
+        PUSH, __1_const_intnl_SystemType
+        PUSH, __5_intnl_TMProTextMeshProUGUI
+        EXTERN, "TMProTextMeshProUGUI.__GetComponent__T"
+        PUSH, teamBScores
+        PUSH, __0_i_Int32
+        PUSH, __5_intnl_TMProTextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Set__SystemInt32_SystemObject__SystemVoid"
+        PUSH, __0_i_Int32
+        PUSH, __7_intnl_SystemInt32
+        COPY
+        PUSH, __7_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __0_i_Int32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x0000045C
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _UnlockTable()
+    .export _UnlockTable
+        
+    _UnlockTable:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  manager._UnlockTable();
+        PUSH, manager
+        PUSH, __14_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _LockTable()
+    .export _LockTable
+        
+    _LockTable:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  manager._LockTable();
+        PUSH, manager
+        PUSH, __15_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _SelectTeams()
+    .export _SelectTeams
+        
+    _SelectTeams:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  manager._SelectTeams();
+        PUSH, manager
+        PUSH, __16_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _DeselectTeams()
+    .export _DeselectTeams
+        
+    _DeselectTeams:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  manager._DeselectTeams();
+        PUSH, manager
+        PUSH, __17_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _Select4BallJapanese()
+    .export _Select4BallJapanese
+        
+    _Select4BallJapanese:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  manager._Select4BallJapanese();
+        PUSH, manager
+        PUSH, __18_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _Select4BallKorean()
+    .export _Select4BallKorean
+        
+    _Select4BallKorean:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  manager._Select4BallKorean();
+        PUSH, manager
+        PUSH, __19_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _Select8Ball()
+    .export _Select8Ball
+        
+    _Select8Ball:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  manager._Select8Ball();
+        PUSH, manager
+        PUSH, __20_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _Select9Ball()
+    .export _Select9Ball
+        
+    _Select9Ball:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  manager._Select9Ball();
+        PUSH, manager
+        PUSH, __21_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _IncreaseTimer()
+    .export _IncreaseTimer
+        
+    _IncreaseTimer:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  manager._IncreaseTimer();
+        PUSH, manager
+        PUSH, __22_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _DecreaseTimer()
+    .export _DecreaseTimer
+        
+    _DecreaseTimer:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  manager._DecreaseTimer();
+        PUSH, manager
+        PUSH, __23_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _EnableGuideline()
+    .export _EnableGuideline
+        
+    _EnableGuideline:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  manager._EnableGuideline();
+        PUSH, manager
+        PUSH, __24_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _DisableGuideline()
+    .export _DisableGuideline
+        
+    _DisableGuideline:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  manager._DisableGuideline();
+        PUSH, manager
+        PUSH, __25_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _SignUpAsPlayer1()
+    .export _SignUpAsPlayer1
+        
+    _SignUpAsPlayer1:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (!isSignedUpToPlay)
+        PUSH, isSignedUpToPlay
+        PUSH, __3_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __3_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000C84
+        
+         #  {
+        
+         #  manager._JoinGame(0);
+        PUSH, manager
+        PUSH, __26_const_intnl_SystemString
+        PUSH, __0_const_intnl_SystemInt32
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, manager
+        PUSH, __27_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        JUMP, 0x00000C9C
+        
+         #  else
+        
+         #  {
+        
+         #  manager._Raise();
+        PUSH, manager
+        PUSH, __28_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _SignUpAsPlayer2()
+    .export _SignUpAsPlayer2
+        
+    _SignUpAsPlayer2:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (!isSignedUpToPlay)
+        PUSH, isSignedUpToPlay
+        PUSH, __4_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __4_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000D18
+        
+         #  {
+        
+         #  manager._JoinGame(1);
+        PUSH, manager
+        PUSH, __26_const_intnl_SystemString
+        PUSH, __1_const_intnl_SystemInt32
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, manager
+        PUSH, __27_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _SignUpAsPlayer3()
+    .export _SignUpAsPlayer3
+        
+    _SignUpAsPlayer3:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (!isSignedUpToPlay)
+        PUSH, isSignedUpToPlay
+        PUSH, __5_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __5_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000D94
+        
+         #  {
+        
+         #  manager._JoinGame(2);
+        PUSH, manager
+        PUSH, __26_const_intnl_SystemString
+        PUSH, __2_const_intnl_SystemInt32
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, manager
+        PUSH, __27_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _SignUpAsPlayer4()
+    .export _SignUpAsPlayer4
+        
+    _SignUpAsPlayer4:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (!isSignedUpToPlay)
+        PUSH, isSignedUpToPlay
+        PUSH, __6_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __6_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000E10
+        
+         #  {
+        
+         #  manager._JoinGame(3);
+        PUSH, manager
+        PUSH, __26_const_intnl_SystemString
+        PUSH, __3_const_intnl_SystemInt32
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, manager
+        PUSH, __27_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _LeaveGame()
+    .export _LeaveGame
+        
+    _LeaveGame:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  manager._LeaveGame();
+        PUSH, manager
+        PUSH, __29_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _StartGame()
+    .export _StartGame
+        
+    _StartGame:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (canStartGame)
+        PUSH, canStartGame
+        JUMP_IF_FALSE, 0x00000E88
+        
+         #  {
+        
+         #  manager._StartNewGame();
+        PUSH, manager
+        PUSH, __30_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _EndGame()
+    .export _EndGame
+        
+    _EndGame:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (isSignedUpToPlay)
+        PUSH, isSignedUpToPlay
+        JUMP_IF_FALSE, 0x00000ECC
+        
+         #  {
+        
+         #  manager._ForceReset();
+        PUSH, manager
+        PUSH, __31_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _EnableResetButton()
+    .export _EnableResetButton
+        
+    _EnableResetButton:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  resetGameButton.SetActive(true);
+        PUSH, resetGameButton
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  lockMenu.SetActive(false);
+        PUSH, lockMenu
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  mainMenu.SetActive(false);
+        PUSH, mainMenu
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  winnerText.text = "";
+        PUSH, winnerText
+        PUSH, __32_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  if (inGameScoreDisplay)
+        PUSH, inGameScoreDisplay
+        PUSH, __7_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __7_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000FC8
+        
+         #  {
+        
+         #  inGameScoreDisplay.SetActive(true);
+        PUSH, inGameScoreDisplay
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  if (tableInfoScreen)
+        PUSH, tableInfoScreen
+        PUSH, __8_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __8_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000FC8
+        
+         #  {
+        
+         #  tableInfoScreen.SetActive(false);
+        PUSH, tableInfoScreen
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _EnableUnlockTableButton()
+    .export _EnableUnlockTableButton
+        
+    _EnableUnlockTableButton:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  resetGameButton.SetActive(false);
+        PUSH, resetGameButton
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  lockMenu.SetActive(true);
+        PUSH, lockMenu
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  mainMenu.SetActive(false);
+        PUSH, mainMenu
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  ResetScoreScreen();
+        PUSH, __0_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x000038A4
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _EnableMainMenu()
+    .export _EnableMainMenu
+        
+    _EnableMainMenu:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  resetGameButton.SetActive(false);
+        PUSH, resetGameButton
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  lockMenu.SetActive(false);
+        PUSH, lockMenu
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  mainMenu.SetActive(true);
+        PUSH, mainMenu
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  visibleTimerDuringGame.text = "";
+        PUSH, visibleTimerDuringGame
+        PUSH, __32_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  if (inGameScoreDisplay)
+        PUSH, inGameScoreDisplay
+        PUSH, __9_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __9_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000010F8
+        
+         #  {
+        
+         #  inGameScoreDisplay.SetActive(false);
+        PUSH, inGameScoreDisplay
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  if (tableInfoScreen)
+        PUSH, tableInfoScreen
+        PUSH, __10_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __10_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001138
+        
+         #  {
+        
+         #  tableInfoScreen.SetActive(true);
+        PUSH, tableInfoScreen
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private void UpdateButtonColors(Image[] buttons, int selectedIndex)
+    UpdateButtonColors:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (buttons == null) return;
+        PUSH, __0_mp_buttons_ImageArray
+        PUSH, __0_const_intnl_UnityEngineUIImageArray
+        PUSH, __11_intnl_SystemBoolean
+        EXTERN, "SystemObject.__op_Equality__SystemObject_SystemObject__SystemBoolean"
+        PUSH, __11_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001198
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+         #  for (int i = 0; i < buttons.Length; i++)
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __1_i_Int32
+        COPY
+        PUSH, __0_mp_buttons_ImageArray
+        PUSH, __8_intnl_SystemInt32
+        EXTERN, "UnityEngineUIImageArray.__get_Length__SystemInt32"
+        PUSH, __1_i_Int32
+        PUSH, __8_intnl_SystemInt32
+        PUSH, __12_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __12_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001320
+        
+         #  {
+        
+         #  if (buttons[i] == null) continue;
+        PUSH, __0_mp_buttons_ImageArray
+        PUSH, __1_i_Int32
+        PUSH, __0_intnl_UnityEngineUIImage
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __0_intnl_UnityEngineUIImage
+        PUSH, __0_const_intnl_UnityEngineUIImage
+        PUSH, __13_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Equality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __13_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x0000124C
+        JUMP, 0x000012E4
+        
+         #  buttons[i].color = i == selectedIndex ? selectedColor : unselectedColor;
+        PUSH, __0_mp_buttons_ImageArray
+        PUSH, __1_i_Int32
+        PUSH, __1_intnl_UnityEngineUIImage
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __1_i_Int32
+        PUSH, __0_mp_selectedIndex_Int32
+        PUSH, __14_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __14_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000012B8
+        PUSH, selectedColor
+        PUSH, __0_intnl_UnityEngineColor
+        COPY
+        JUMP, 0x000012CC
+        PUSH, unselectedColor
+        PUSH, __0_intnl_UnityEngineColor
+        COPY
+        PUSH, __1_intnl_UnityEngineUIImage
+        PUSH, __0_intnl_UnityEngineColor
+        EXTERN, "UnityEngineUIImage.__set_color__UnityEngineColor__SystemVoid"
+        PUSH, __1_i_Int32
+        PUSH, __9_intnl_SystemInt32
+        COPY
+        PUSH, __9_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __1_i_Int32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x000011AC
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _UpdateMainMenuView(
+        
+         #  bool newIsTeams,
+        
+         #  bool isTeam2Playing,
+        
+         #  int gameMode,
+        
+         #  bool isKorean4Ball,
+        
+         #  int timerMode,
+        
+         #  int player1ID,
+        
+         #  int player2ID,
+        
+         #  int player3ID,
+        
+         #  int player4ID,
+        
+         #  bool guideline
+    .export _UpdateMainMenuView
+        
+    _UpdateMainMenuView:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (newIsTeams)
+        PUSH, __0_mp_newIsTeams_Boolean
+        JUMP_IF_FALSE, 0x000013A8
+        
+         #  {
+        
+         #  if (VRC.SDKBase.Utilities.IsValid(teamsTxt)) teamsTxt.text = "Teams: YES";
+        PUSH, teamsTxt
+        PUSH, __15_intnl_SystemBoolean
+        EXTERN, "VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean"
+        PUSH, __15_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x0000138C
+        PUSH, teamsTxt
+        PUSH, __33_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  isTeams = true;
+        PUSH, __1_const_intnl_SystemBoolean
+        PUSH, isTeams
+        COPY
+        JUMP, 0x000013FC
+        
+         #  else
+        
+         #  {
+        
+         #  if (VRC.SDKBase.Utilities.IsValid(teamsTxt)) teamsTxt.text = "Teams: NO";
+        PUSH, teamsTxt
+        PUSH, __15_intnl_SystemBoolean
+        EXTERN, "VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean"
+        PUSH, __15_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000013E8
+        PUSH, teamsTxt
+        PUSH, __34_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  isTeams = false;
+        PUSH, __0_const_intnl_SystemBoolean
+        PUSH, isTeams
+        COPY
+        
+         #  UpdateButtonColors(teamsButtons, newIsTeams ? 0 : 1);
+        PUSH, __0_mp_newIsTeams_Boolean
+        JUMP_IF_FALSE, 0x00001428
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __0_mp_selectedIndex_Int32
+        COPY
+        JUMP, 0x0000143C
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __0_mp_selectedIndex_Int32
+        COPY
+        PUSH, teamsButtons
+        PUSH, __0_mp_buttons_ImageArray
+        COPY
+        PUSH, teamsButtons
+        PUSH, __0_intnl_UnityEngineUIImageArray
+        COPY #  Copy-on-write symbol value dirtied
+        PUSH, __1_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00001154
+        
+         #  switch (gameMode)
+        PUSH, __0_mp_gameMode_Int32
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __15_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __15_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000014AC
+        JUMP, 0x00001524
+        PUSH, __0_mp_gameMode_Int32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __16_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __16_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000014E4
+        JUMP, 0x000015B8
+        PUSH, __0_mp_gameMode_Int32
+        PUSH, __2_const_intnl_SystemInt32
+        PUSH, __17_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __17_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x0000151C
+        JUMP, 0x0000164C
+        JUMP, 0x00001784
+        
+         #  if (VRC.SDKBase.Utilities.IsValid(gameModeTxt)) gameModeTxt.text = "American 8-Ball";
+        PUSH, gameModeTxt
+        PUSH, __18_intnl_SystemBoolean
+        EXTERN, "VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean"
+        PUSH, __18_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001564
+        PUSH, gameModeTxt
+        PUSH, __35_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  UpdateButtonColors(gameModeButtons, 0);
+        PUSH, gameModeButtons
+        PUSH, __0_mp_buttons_ImageArray
+        COPY
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __0_mp_selectedIndex_Int32
+        COPY
+        PUSH, gameModeButtons
+        PUSH, __1_intnl_UnityEngineUIImageArray
+        COPY #  Copy-on-write symbol value dirtied
+        PUSH, __2_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00001154
+        
+         #  break;
+        JUMP, 0x00001784
+        
+         #  if (VRC.SDKBase.Utilities.IsValid(gameModeTxt)) gameModeTxt.text = "American 9-Ball";
+        PUSH, gameModeTxt
+        PUSH, __18_intnl_SystemBoolean
+        EXTERN, "VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean"
+        PUSH, __18_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000015F8
+        PUSH, gameModeTxt
+        PUSH, __36_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  UpdateButtonColors(gameModeButtons, 1);
+        PUSH, gameModeButtons
+        PUSH, __0_mp_buttons_ImageArray
+        COPY
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __0_mp_selectedIndex_Int32
+        COPY
+        PUSH, gameModeButtons
+        PUSH, __1_intnl_UnityEngineUIImageArray
+        COPY #  Copy-on-write symbol value dirtied
+        PUSH, __3_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00001154
+        
+         #  break;
+        JUMP, 0x00001784
+        
+         #  if (isKorean4Ball)
+        PUSH, __0_mp_isKorean4Ball_Boolean
+        JUMP_IF_FALSE, 0x000016F0
+        
+         #  {
+        
+         #  if (VRC.SDKBase.Utilities.IsValid(gameModeTxt)) gameModeTxt.text = "Korean 4-Ball";
+        PUSH, gameModeTxt
+        PUSH, __18_intnl_SystemBoolean
+        EXTERN, "VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean"
+        PUSH, __18_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x0000169C
+        PUSH, gameModeTxt
+        PUSH, __37_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  UpdateButtonColors(gameModeButtons, 3);
+        PUSH, gameModeButtons
+        PUSH, __0_mp_buttons_ImageArray
+        COPY
+        PUSH, __3_const_intnl_SystemInt32
+        PUSH, __0_mp_selectedIndex_Int32
+        COPY
+        PUSH, gameModeButtons
+        PUSH, __1_intnl_UnityEngineUIImageArray
+        COPY #  Copy-on-write symbol value dirtied
+        PUSH, __4_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00001154
+        JUMP, 0x0000177C
+        
+         #  else
+        
+         #  {
+        
+         #  if (VRC.SDKBase.Utilities.IsValid(gameModeTxt)) gameModeTxt.text = "Japanese 4-Ball";
+        PUSH, gameModeTxt
+        PUSH, __18_intnl_SystemBoolean
+        EXTERN, "VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean"
+        PUSH, __18_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001730
+        PUSH, gameModeTxt
+        PUSH, __38_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  UpdateButtonColors(gameModeButtons, 2);
+        PUSH, gameModeButtons
+        PUSH, __0_mp_buttons_ImageArray
+        COPY
+        PUSH, __2_const_intnl_SystemInt32
+        PUSH, __0_mp_selectedIndex_Int32
+        COPY
+        PUSH, gameModeButtons
+        PUSH, __1_intnl_UnityEngineUIImageArray
+        COPY #  Copy-on-write symbol value dirtied
+        PUSH, __5_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00001154
+        
+         #  break;
+        JUMP, 0x00001784
+        
+         #  switch (timerMode)
+        PUSH, __0_mp_timerMode_Int32
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __18_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __18_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000017BC
+        JUMP, 0x000018A4
+        PUSH, __0_mp_timerMode_Int32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __19_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __19_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000017F4
+        JUMP, 0x000018EC
+        PUSH, __0_mp_timerMode_Int32
+        PUSH, __2_const_intnl_SystemInt32
+        PUSH, __20_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __20_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x0000182C
+        JUMP, 0x0000195C
+        PUSH, __0_mp_timerMode_Int32
+        PUSH, __3_const_intnl_SystemInt32
+        PUSH, __21_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __21_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001864
+        JUMP, 0x000019CC
+        PUSH, __0_mp_timerMode_Int32
+        PUSH, __4_const_intnl_SystemInt32
+        PUSH, __22_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __22_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x0000189C
+        JUMP, 0x00001A3C
+        JUMP, 0x00001AAC
+        
+         #  if (VRC.SDKBase.Utilities.IsValid(timer)) timer.text = noTimerText;
+        PUSH, timer
+        PUSH, __23_intnl_SystemBoolean
+        EXTERN, "VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean"
+        PUSH, __23_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000018E4
+        PUSH, timer
+        PUSH, noTimerText
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  break;
+        JUMP, 0x00001AAC
+        
+         #  if (VRC.SDKBase.Utilities.IsValid(timer)) timer.text = timerValueText.Replace("{}", "10");
+        PUSH, timer
+        PUSH, __23_intnl_SystemBoolean
+        EXTERN, "VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean"
+        PUSH, __23_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001954
+        PUSH, timerValueText
+        PUSH, __39_const_intnl_SystemString
+        PUSH, __40_const_intnl_SystemString
+        PUSH, __6_intnl_SystemString
+        EXTERN, "SystemString.__Replace__SystemString_SystemString__SystemString"
+        PUSH, timer
+        PUSH, __6_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  break;
+        JUMP, 0x00001AAC
+        
+         #  if (VRC.SDKBase.Utilities.IsValid(timer)) timer.text = timerValueText.Replace("{}", "15");
+        PUSH, timer
+        PUSH, __23_intnl_SystemBoolean
+        EXTERN, "VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean"
+        PUSH, __23_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000019C4
+        PUSH, timerValueText
+        PUSH, __39_const_intnl_SystemString
+        PUSH, __41_const_intnl_SystemString
+        PUSH, __6_intnl_SystemString
+        EXTERN, "SystemString.__Replace__SystemString_SystemString__SystemString"
+        PUSH, timer
+        PUSH, __6_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  break;
+        JUMP, 0x00001AAC
+        
+         #  if (VRC.SDKBase.Utilities.IsValid(timer)) timer.text = timerValueText.Replace("{}", "30");
+        PUSH, timer
+        PUSH, __23_intnl_SystemBoolean
+        EXTERN, "VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean"
+        PUSH, __23_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001A34
+        PUSH, timerValueText
+        PUSH, __39_const_intnl_SystemString
+        PUSH, __42_const_intnl_SystemString
+        PUSH, __6_intnl_SystemString
+        EXTERN, "SystemString.__Replace__SystemString_SystemString__SystemString"
+        PUSH, timer
+        PUSH, __6_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  break;
+        JUMP, 0x00001AAC
+        
+         #  if (VRC.SDKBase.Utilities.IsValid(timer)) timer.text = timerValueText.Replace("{}", "60");
+        PUSH, timer
+        PUSH, __23_intnl_SystemBoolean
+        EXTERN, "VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean"
+        PUSH, __23_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001AA4
+        PUSH, timerValueText
+        PUSH, __39_const_intnl_SystemString
+        PUSH, __43_const_intnl_SystemString
+        PUSH, __6_intnl_SystemString
+        EXTERN, "SystemString.__Replace__SystemString_SystemString__SystemString"
+        PUSH, timer
+        PUSH, __6_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  break;
+        JUMP, 0x00001AAC
+        
+         #  if (VRC.SDKBase.Utilities.IsValid(timerButton)) timerButton.color = timerMode != 0 ? selectedColor : unselectedColor;
+        PUSH, timerButton
+        PUSH, __23_intnl_SystemBoolean
+        EXTERN, "VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean"
+        PUSH, __23_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001B4C
+        PUSH, __0_mp_timerMode_Int32
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __24_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_Inequality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __24_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001B20
+        PUSH, selectedColor
+        PUSH, __1_intnl_UnityEngineColor
+        COPY
+        JUMP, 0x00001B34
+        PUSH, unselectedColor
+        PUSH, __1_intnl_UnityEngineColor
+        COPY
+        PUSH, timerButton
+        PUSH, __1_intnl_UnityEngineColor
+        EXTERN, "UnityEngineUIImage.__set_color__UnityEngineColor__SystemVoid"
+        
+         #  if (VRC.SDKBase.Utilities.IsValid(noTimerButton)) noTimerButton.color = timerMode == 0 ? selectedColor : unselectedColor;
+        PUSH, noTimerButton
+        PUSH, __25_intnl_SystemBoolean
+        EXTERN, "VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean"
+        PUSH, __25_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001BEC
+        PUSH, __0_mp_timerMode_Int32
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __26_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __26_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001BC0
+        PUSH, selectedColor
+        PUSH, __2_intnl_UnityEngineColor
+        COPY
+        JUMP, 0x00001BD4
+        PUSH, unselectedColor
+        PUSH, __2_intnl_UnityEngineColor
+        COPY
+        PUSH, noTimerButton
+        PUSH, __2_intnl_UnityEngineColor
+        EXTERN, "UnityEngineUIImage.__set_color__UnityEngineColor__SystemVoid"
+        
+         #  leaveButton.SetActive(false);
+        PUSH, leaveButton
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  if (useUnityUI)
+        PUSH, useUnityUI
+        JUMP_IF_FALSE, 0x00001C7C
+        
+         #  {
+        
+         #  player1UIButton.interactable = false;
+        PUSH, player1UIButton
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineUIButton.__set_interactable__SystemBoolean__SystemVoid"
+        
+         #  player2UIButton.interactable = false;
+        PUSH, player2UIButton
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineUIButton.__set_interactable__SystemBoolean__SystemVoid"
+        
+         #  player3UIButton.interactable = false;
+        PUSH, player3UIButton
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineUIButton.__set_interactable__SystemBoolean__SystemVoid"
+        
+         #  player4UIButton.interactable = false;
+        PUSH, player4UIButton
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineUIButton.__set_interactable__SystemBoolean__SystemVoid"
+        JUMP, 0x00001CDC
+        
+         #  else
+        
+         #  {
+        
+         #  player1Button.SetActive(false);
+        PUSH, player1Button
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  player2Button.SetActive(false);
+        PUSH, player2Button
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  player3Button.SetActive(false);
+        PUSH, player3Button
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  player4Button.SetActive(false);
+        PUSH, player4Button
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  bool found = false;
+        PUSH, __0_const_intnl_SystemBoolean
+        PUSH, __0_found_Boolean
+        COPY
+        
+         #  var defaultText = manager.enableUdonChips
+        PUSH, manager
+        PUSH, __44_const_intnl_SystemString
+        PUSH, __1_intnl_SystemObject
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __1_intnl_SystemObject
+        PUSH, __28_intnl_SystemBoolean
+        EXTERN, "SystemConvert.__ToBoolean__SystemObject__SystemBoolean"
+        PUSH, __28_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001E3C
+        
+         #  ? defaultEmptyplayerSlotTextWithUdonChips.Replace("{}", (manager.price * manager.raiseCount).ToString())
+        PUSH, manager
+        PUSH, __45_const_intnl_SystemString
+        PUSH, __2_intnl_SystemObject
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __2_intnl_SystemObject
+        PUSH, __1_intnl_SystemSingle
+        EXTERN, "SystemConvert.__ToSingle__SystemObject__SystemSingle"
+        PUSH, manager
+        PUSH, __46_const_intnl_SystemString
+        PUSH, __3_intnl_SystemObject
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __3_intnl_SystemObject
+        PUSH, __11_intnl_SystemInt32
+        EXTERN, "SystemConvert.__ToInt32__SystemObject__SystemInt32"
+        PUSH, __11_intnl_SystemInt32
+        PUSH, __2_intnl_SystemSingle
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __1_intnl_SystemSingle
+        PUSH, __2_intnl_SystemSingle
+        PUSH, __3_intnl_SystemSingle
+        EXTERN, "SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __3_intnl_SystemSingle
+        PUSH, __6_intnl_SystemString
+        EXTERN, "SystemSingle.__ToString__SystemString"
+        PUSH, defaultEmptyplayerSlotTextWithUdonChips
+        PUSH, __39_const_intnl_SystemString
+        PUSH, __6_intnl_SystemString
+        PUSH, __7_intnl_SystemString
+        EXTERN, "SystemString.__Replace__SystemString_SystemString__SystemString"
+        PUSH, __7_intnl_SystemString
+        PUSH, __8_intnl_SystemString
+        COPY
+        JUMP, 0x00001E50
+        
+         #  : defaultEmptyPlayerSlotText;
+        PUSH, defaultEmptyPlayerSlotText
+        PUSH, __8_intnl_SystemString
+        COPY
+        PUSH, __8_intnl_SystemString
+        PUSH, __0_defaultText_String
+        COPY
+        
+         #  if (player1ID > 0)
+        PUSH, __0_mp_player1ID_Int32
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __29_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __29_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001F28
+        
+         #  {
+        
+         #  found = HandlePlayerState(player1MenuText, player1Scores, VRCPlayerApi.GetPlayerById(player1ID));
+        PUSH, __0_mp_player1ID_Int32
+        PUSH, __0_mp_player_VRCPlayerApi
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__GetPlayerById__SystemInt32__VRCSDKBaseVRCPlayerApi"
+        PUSH, player1MenuText
+        PUSH, __0_mp_menuText_TextMeshProUGUI
+        COPY
+        PUSH, player1Scores
+        PUSH, __0_mp_scores_TextMeshProUGUIArray
+        COPY
+        PUSH, player1MenuText
+        PUSH, __6_intnl_TMProTextMeshProUGUI
+        COPY #  Copy-on-write symbol value dirtied
+        PUSH, player1Scores
+        PUSH, __0_intnl_TMProTextMeshProUGUIArray
+        COPY #  Copy-on-write symbol value dirtied
+        PUSH, __6_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00002CAC
+        PUSH, __0_intnl_returnValSymbol_Boolean
+        PUSH, __0_found_Boolean
+        COPY
+        JUMP, 0x00002024
+        
+         #  else
+        
+         #  {
+        
+         #  player1MenuText.text = defaultText.Replace("{}", "1");
+        PUSH, __0_defaultText_String
+        PUSH, __39_const_intnl_SystemString
+        PUSH, __47_const_intnl_SystemString
+        PUSH, __9_intnl_SystemString
+        EXTERN, "SystemString.__Replace__SystemString_SystemString__SystemString"
+        PUSH, player1MenuText
+        PUSH, __9_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  foreach (var score in player1Scores)
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __12_intnl_SystemInt32
+        COPY
+        PUSH, player1Scores
+        PUSH, __13_intnl_SystemInt32
+        EXTERN, "TMProTextMeshProUGUIArray.__get_Length__SystemInt32"
+        PUSH, __12_intnl_SystemInt32
+        PUSH, __13_intnl_SystemInt32
+        PUSH, __30_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __30_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00002024
+        PUSH, player1Scores
+        PUSH, __12_intnl_SystemInt32
+        PUSH, __0_score_TextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        
+         #  {
+        
+         #  score.text = "";
+        PUSH, __0_score_TextMeshProUGUI
+        PUSH, __32_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        PUSH, __12_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __12_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x00001F94
+        
+         #  if (player2ID > 0)
+        PUSH, __0_mp_player2ID_Int32
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __30_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __30_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000020E8
+        
+         #  {
+        
+         #  found = HandlePlayerState(player2MenuText, player2Scores, VRCPlayerApi.GetPlayerById(player2ID));
+        PUSH, __0_mp_player2ID_Int32
+        PUSH, __0_mp_player_VRCPlayerApi
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__GetPlayerById__SystemInt32__VRCSDKBaseVRCPlayerApi"
+        PUSH, player2MenuText
+        PUSH, __0_mp_menuText_TextMeshProUGUI
+        COPY
+        PUSH, player2Scores
+        PUSH, __0_mp_scores_TextMeshProUGUIArray
+        COPY
+        PUSH, player2MenuText
+        PUSH, __6_intnl_TMProTextMeshProUGUI
+        COPY #  Copy-on-write symbol value dirtied
+        PUSH, player2Scores
+        PUSH, __0_intnl_TMProTextMeshProUGUIArray
+        COPY #  Copy-on-write symbol value dirtied
+        PUSH, __7_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00002CAC
+        PUSH, __0_intnl_returnValSymbol_Boolean
+        PUSH, __0_found_Boolean
+        COPY
+        JUMP, 0x000021E4
+        
+         #  else
+        
+         #  {
+        
+         #  player2MenuText.text = defaultText.Replace("{}", "2");
+        PUSH, __0_defaultText_String
+        PUSH, __39_const_intnl_SystemString
+        PUSH, __48_const_intnl_SystemString
+        PUSH, __9_intnl_SystemString
+        EXTERN, "SystemString.__Replace__SystemString_SystemString__SystemString"
+        PUSH, player2MenuText
+        PUSH, __9_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  foreach (var score in player2Scores)
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __12_intnl_SystemInt32
+        COPY
+        PUSH, player2Scores
+        PUSH, __13_intnl_SystemInt32
+        EXTERN, "TMProTextMeshProUGUIArray.__get_Length__SystemInt32"
+        PUSH, __12_intnl_SystemInt32
+        PUSH, __13_intnl_SystemInt32
+        PUSH, __31_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __31_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000021E4
+        PUSH, player2Scores
+        PUSH, __12_intnl_SystemInt32
+        PUSH, __0_score_TextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        
+         #  {
+        
+         #  score.text = "";
+        PUSH, __0_score_TextMeshProUGUI
+        PUSH, __32_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        PUSH, __12_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __12_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x00002154
+        
+         #  if (player3ID > 0)
+        PUSH, __0_mp_player3ID_Int32
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __31_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __31_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000022A8
+        
+         #  {
+        
+         #  found = HandlePlayerState(player3MenuText, player3Scores, VRCPlayerApi.GetPlayerById(player3ID));
+        PUSH, __0_mp_player3ID_Int32
+        PUSH, __0_mp_player_VRCPlayerApi
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__GetPlayerById__SystemInt32__VRCSDKBaseVRCPlayerApi"
+        PUSH, player3MenuText
+        PUSH, __0_mp_menuText_TextMeshProUGUI
+        COPY
+        PUSH, player3Scores
+        PUSH, __0_mp_scores_TextMeshProUGUIArray
+        COPY
+        PUSH, player3MenuText
+        PUSH, __6_intnl_TMProTextMeshProUGUI
+        COPY #  Copy-on-write symbol value dirtied
+        PUSH, player3Scores
+        PUSH, __0_intnl_TMProTextMeshProUGUIArray
+        COPY #  Copy-on-write symbol value dirtied
+        PUSH, __8_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00002CAC
+        PUSH, __0_intnl_returnValSymbol_Boolean
+        PUSH, __0_found_Boolean
+        COPY
+        JUMP, 0x000023E4
+        
+         #  else
+        
+         #  {
+        
+         #  player3MenuText.text = newIsTeams ? defaultText.Replace("{}", "3") : "";
+        PUSH, __0_mp_newIsTeams_Boolean
+        JUMP_IF_FALSE, 0x000022FC
+        PUSH, __0_defaultText_String
+        PUSH, __39_const_intnl_SystemString
+        PUSH, __49_const_intnl_SystemString
+        PUSH, __9_intnl_SystemString
+        EXTERN, "SystemString.__Replace__SystemString_SystemString__SystemString"
+        PUSH, __9_intnl_SystemString
+        PUSH, __10_intnl_SystemString
+        COPY
+        JUMP, 0x00002310
+        PUSH, __32_const_intnl_SystemString
+        PUSH, __10_intnl_SystemString
+        COPY
+        PUSH, player3MenuText
+        PUSH, __10_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  foreach (var score in player3Scores)
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __12_intnl_SystemInt32
+        COPY
+        PUSH, player3Scores
+        PUSH, __13_intnl_SystemInt32
+        EXTERN, "TMProTextMeshProUGUIArray.__get_Length__SystemInt32"
+        PUSH, __12_intnl_SystemInt32
+        PUSH, __13_intnl_SystemInt32
+        PUSH, __32_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __32_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000023E4
+        PUSH, player3Scores
+        PUSH, __12_intnl_SystemInt32
+        PUSH, __0_score_TextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        
+         #  {
+        
+         #  score.text = "";
+        PUSH, __0_score_TextMeshProUGUI
+        PUSH, __32_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        PUSH, __12_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __12_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x00002354
+        
+         #  if (player4ID > 0)
+        PUSH, __0_mp_player4ID_Int32
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __32_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __32_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000024A8
+        
+         #  {
+        
+         #  found = HandlePlayerState(player4MenuText, player4Scores, VRCPlayerApi.GetPlayerById(player4ID));
+        PUSH, __0_mp_player4ID_Int32
+        PUSH, __0_mp_player_VRCPlayerApi
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__GetPlayerById__SystemInt32__VRCSDKBaseVRCPlayerApi"
+        PUSH, player4MenuText
+        PUSH, __0_mp_menuText_TextMeshProUGUI
+        COPY
+        PUSH, player4Scores
+        PUSH, __0_mp_scores_TextMeshProUGUIArray
+        COPY
+        PUSH, player4MenuText
+        PUSH, __6_intnl_TMProTextMeshProUGUI
+        COPY #  Copy-on-write symbol value dirtied
+        PUSH, player4Scores
+        PUSH, __0_intnl_TMProTextMeshProUGUIArray
+        COPY #  Copy-on-write symbol value dirtied
+        PUSH, __9_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00002CAC
+        PUSH, __0_intnl_returnValSymbol_Boolean
+        PUSH, __0_found_Boolean
+        COPY
+        JUMP, 0x000025E4
+        
+         #  else
+        
+         #  {
+        
+         #  player4MenuText.text = newIsTeams ? defaultText.Replace("{}", "4") : "";
+        PUSH, __0_mp_newIsTeams_Boolean
+        JUMP_IF_FALSE, 0x000024FC
+        PUSH, __0_defaultText_String
+        PUSH, __39_const_intnl_SystemString
+        PUSH, __50_const_intnl_SystemString
+        PUSH, __9_intnl_SystemString
+        EXTERN, "SystemString.__Replace__SystemString_SystemString__SystemString"
+        PUSH, __9_intnl_SystemString
+        PUSH, __10_intnl_SystemString
+        COPY
+        JUMP, 0x00002510
+        PUSH, __32_const_intnl_SystemString
+        PUSH, __10_intnl_SystemString
+        COPY
+        PUSH, player4MenuText
+        PUSH, __10_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  foreach (var score in player4Scores)
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __12_intnl_SystemInt32
+        COPY
+        PUSH, player4Scores
+        PUSH, __13_intnl_SystemInt32
+        EXTERN, "TMProTextMeshProUGUIArray.__get_Length__SystemInt32"
+        PUSH, __12_intnl_SystemInt32
+        PUSH, __13_intnl_SystemInt32
+        PUSH, __33_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __33_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000025E4
+        PUSH, player4Scores
+        PUSH, __12_intnl_SystemInt32
+        PUSH, __0_score_TextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        
+         #  {
+        
+         #  score.text = "";
+        PUSH, __0_score_TextMeshProUGUI
+        PUSH, __32_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        PUSH, __12_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __12_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x00002554
+        
+         #  int id = Networking.LocalPlayer.playerId;
+        PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi
+        PUSH, __0_id_Int32
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32"
+        
+         #  if (id == player1ID || id == player2ID || id == player3ID || id == player4ID)
+        PUSH, __0_id_Int32
+        PUSH, __0_mp_player1ID_Int32
+        PUSH, __36_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __36_intnl_SystemBoolean
+        PUSH, __35_intnl_SystemBoolean
+        COPY
+        PUSH, __35_intnl_SystemBoolean
+        PUSH, __37_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __37_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000026BC
+        PUSH, __0_id_Int32
+        PUSH, __0_mp_player2ID_Int32
+        PUSH, __38_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __35_intnl_SystemBoolean
+        PUSH, __38_intnl_SystemBoolean
+        PUSH, __39_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalOr__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __39_intnl_SystemBoolean
+        PUSH, __35_intnl_SystemBoolean
+        COPY
+        PUSH, __35_intnl_SystemBoolean
+        PUSH, __34_intnl_SystemBoolean
+        COPY
+        PUSH, __34_intnl_SystemBoolean
+        PUSH, __40_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __40_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x0000274C
+        PUSH, __0_id_Int32
+        PUSH, __0_mp_player3ID_Int32
+        PUSH, __41_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __34_intnl_SystemBoolean
+        PUSH, __41_intnl_SystemBoolean
+        PUSH, __42_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalOr__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __42_intnl_SystemBoolean
+        PUSH, __34_intnl_SystemBoolean
+        COPY
+        PUSH, __34_intnl_SystemBoolean
+        PUSH, __33_intnl_SystemBoolean
+        COPY
+        PUSH, __33_intnl_SystemBoolean
+        PUSH, __43_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __43_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000027DC
+        PUSH, __0_id_Int32
+        PUSH, __0_mp_player4ID_Int32
+        PUSH, __44_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __33_intnl_SystemBoolean
+        PUSH, __44_intnl_SystemBoolean
+        PUSH, __45_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalOr__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __45_intnl_SystemBoolean
+        PUSH, __33_intnl_SystemBoolean
+        COPY
+        PUSH, __33_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00002898
+        
+         #  {
+        
+         #  isSignedUpToPlay = true;
+        PUSH, __1_const_intnl_SystemBoolean
+        PUSH, isSignedUpToPlay
+        COPY
+        
+         #  if (id == player1ID)
+        PUSH, __0_id_Int32
+        PUSH, __0_mp_player1ID_Int32
+        PUSH, __46_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __46_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00002864
+        
+         #  {
+        
+         #  canStartGame = true;
+        PUSH, __1_const_intnl_SystemBoolean
+        PUSH, canStartGame
+        COPY
+        
+         #  startGameButton.SetActive(true);
+        PUSH, startGameButton
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        JUMP, 0x00002890
+        
+         #  else
+        
+         #  {
+        
+         #  canStartGame = false;
+        PUSH, __0_const_intnl_SystemBoolean
+        PUSH, canStartGame
+        COPY
+        
+         #  startGameButton.SetActive(false);
+        PUSH, startGameButton
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        JUMP, 0x000028D8
+        
+         #  else
+        
+         #  {
+        
+         #  isSignedUpToPlay = false;
+        PUSH, __0_const_intnl_SystemBoolean
+        PUSH, isSignedUpToPlay
+        COPY
+        
+         #  canStartGame = false;
+        PUSH, __0_const_intnl_SystemBoolean
+        PUSH, canStartGame
+        COPY
+        
+         #  startGameButton.SetActive(false);
+        PUSH, startGameButton
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  if (!found)
+        PUSH, __0_found_Boolean
+        PUSH, __46_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __46_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00002A00
+        
+         #  {
+        
+         #  if (useUnityUI)
+        PUSH, useUnityUI
+        JUMP_IF_FALSE, 0x00002948
+        
+         #  {
+        
+         #  player1UIButton.interactable = true;
+        PUSH, player1UIButton
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineUIButton.__set_interactable__SystemBoolean__SystemVoid"
+        
+         #  player2UIButton.interactable = true;
+        PUSH, player2UIButton
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineUIButton.__set_interactable__SystemBoolean__SystemVoid"
+        JUMP, 0x00002978
+        
+         #  else
+        
+         #  {
+        
+         #  player1Button.SetActive(true);
+        PUSH, player1Button
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  player2Button.SetActive(true);
+        PUSH, player2Button
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  if (newIsTeams)
+        PUSH, __0_mp_newIsTeams_Boolean
+        JUMP_IF_FALSE, 0x00002A00
+        
+         #  {
+        
+         #  if (useUnityUI)
+        PUSH, useUnityUI
+        JUMP_IF_FALSE, 0x000029D0
+        
+         #  {
+        
+         #  player3UIButton.interactable = true;
+        PUSH, player3UIButton
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineUIButton.__set_interactable__SystemBoolean__SystemVoid"
+        
+         #  player4UIButton.interactable = true;
+        PUSH, player4UIButton
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineUIButton.__set_interactable__SystemBoolean__SystemVoid"
+        JUMP, 0x00002A00
+        
+         #  else
+        
+         #  {
+        
+         #  player3Button.SetActive(true);
+        PUSH, player3Button
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  player4Button.SetActive(true);
+        PUSH, player4Button
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  if (guideline)
+        PUSH, __0_mp_guideline_Boolean
+        JUMP_IF_FALSE, 0x00002B54
+        
+         #  {
+        
+         #  if (toggleGuideLineButtonsActive && !useUnityUI)
+        PUSH, toggleGuideLineButtonsActive
+        PUSH, __47_intnl_SystemBoolean
+        COPY
+        PUSH, __47_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00002A80
+        PUSH, useUnityUI
+        PUSH, __48_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __47_intnl_SystemBoolean
+        PUSH, __48_intnl_SystemBoolean
+        PUSH, __49_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __49_intnl_SystemBoolean
+        PUSH, __47_intnl_SystemBoolean
+        COPY
+        PUSH, __47_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00002AC0
+        
+         #  {
+        
+         #  guideLineDisableButton.SetActive(true);
+        PUSH, guideLineDisableButton
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  guideLineEnableButton.SetActive(false);
+        PUSH, guideLineEnableButton
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  UpdateButtonColors(guideLineButtons, 0);
+        PUSH, guideLineButtons
+        PUSH, __0_mp_buttons_ImageArray
+        COPY
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __0_mp_selectedIndex_Int32
+        COPY
+        PUSH, guideLineButtons
+        PUSH, __1_intnl_UnityEngineUIImageArray
+        COPY #  Copy-on-write symbol value dirtied
+        PUSH, __10_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00001154
+        
+         #  if (VRC.SDKBase.Utilities.IsValid(guidelineStatus)) guidelineStatus.text = "Guideline On";
+        PUSH, guidelineStatus
+        PUSH, __50_intnl_SystemBoolean
+        EXTERN, "VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean"
+        PUSH, __50_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00002B4C
+        PUSH, guidelineStatus
+        PUSH, __51_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        JUMP, 0x00002C90
+        
+         #  else
+        
+         #  {
+        
+         #  if (toggleGuideLineButtonsActive && !useUnityUI)
+        PUSH, toggleGuideLineButtonsActive
+        PUSH, __47_intnl_SystemBoolean
+        COPY
+        PUSH, __47_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00002BC4
+        PUSH, useUnityUI
+        PUSH, __48_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __47_intnl_SystemBoolean
+        PUSH, __48_intnl_SystemBoolean
+        PUSH, __49_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __49_intnl_SystemBoolean
+        PUSH, __47_intnl_SystemBoolean
+        COPY
+        PUSH, __47_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00002C04
+        
+         #  {
+        
+         #  guideLineDisableButton.SetActive(false);
+        PUSH, guideLineDisableButton
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  guideLineEnableButton.SetActive(true);
+        PUSH, guideLineEnableButton
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  UpdateButtonColors(guideLineButtons, 1);
+        PUSH, guideLineButtons
+        PUSH, __0_mp_buttons_ImageArray
+        COPY
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __0_mp_selectedIndex_Int32
+        COPY
+        PUSH, guideLineButtons
+        PUSH, __1_intnl_UnityEngineUIImageArray
+        COPY #  Copy-on-write symbol value dirtied
+        PUSH, __11_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00001154
+        
+         #  if (VRC.SDKBase.Utilities.IsValid(guidelineStatus)) guidelineStatus.text = "Guideline Off";
+        PUSH, guidelineStatus
+        PUSH, __50_intnl_SystemBoolean
+        EXTERN, "VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean"
+        PUSH, __50_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00002C90
+        PUSH, guidelineStatus
+        PUSH, __52_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private bool HandlePlayerState(TextMeshProUGUI menuText, TextMeshProUGUI[] scores, VRCPlayerApi player)
+    HandlePlayerState:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (!VRC.SDKBase.Utilities.IsValid(player))
+        PUSH, __0_mp_player_VRCPlayerApi
+        PUSH, __51_intnl_SystemBoolean
+        EXTERN, "VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean"
+        PUSH, __51_intnl_SystemBoolean
+        PUSH, __52_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __52_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00002D14
+        
+         #  {
+        
+         #  return false;
+        PUSH, __0_const_intnl_SystemBoolean
+        PUSH, __0_intnl_returnValSymbol_Boolean
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+         #  menuText.text = player.displayName;
+        PUSH, __0_mp_player_VRCPlayerApi
+        PUSH, __11_intnl_SystemString
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__get_displayName__SystemString"
+        PUSH, __0_mp_menuText_TextMeshProUGUI
+        PUSH, __11_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  foreach (var score in scores)
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __14_intnl_SystemInt32
+        COPY
+        PUSH, __0_mp_scores_TextMeshProUGUIArray
+        PUSH, __15_intnl_SystemInt32
+        EXTERN, "TMProTextMeshProUGUIArray.__get_Length__SystemInt32"
+        PUSH, __14_intnl_SystemInt32
+        PUSH, __15_intnl_SystemInt32
+        PUSH, __53_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __53_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00002E18
+        PUSH, __0_mp_scores_TextMeshProUGUIArray
+        PUSH, __14_intnl_SystemInt32
+        PUSH, __1_score_TextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        
+         #  {
+        
+         #  score.text = player.displayName;
+        PUSH, __0_mp_player_VRCPlayerApi
+        PUSH, __12_intnl_SystemString
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__get_displayName__SystemString"
+        PUSH, __1_score_TextMeshProUGUI
+        PUSH, __12_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        PUSH, __14_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __14_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x00002D70
+        
+         #  if (player.playerId == Networking.LocalPlayer.playerId)
+        PUSH, __0_mp_player_VRCPlayerApi
+        PUSH, __14_intnl_SystemInt32
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32"
+        PUSH, __1_intnl_VRCSDKBaseVRCPlayerApi
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __1_intnl_VRCSDKBaseVRCPlayerApi
+        PUSH, __15_intnl_SystemInt32
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32"
+        PUSH, __14_intnl_SystemInt32
+        PUSH, __15_intnl_SystemInt32
+        PUSH, __53_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __53_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00003068
+        
+         #  {
+        
+         #  leaveButton.SetActive(true);
+        PUSH, leaveButton
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  if (useUnityUI)
+        PUSH, useUnityUI
+        JUMP_IF_FALSE, 0x00002F18
+        
+         #  {
+        
+         #  player1UIButton.interactable = false;
+        PUSH, player1UIButton
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineUIButton.__set_interactable__SystemBoolean__SystemVoid"
+        
+         #  player2UIButton.interactable = false;
+        PUSH, player2UIButton
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineUIButton.__set_interactable__SystemBoolean__SystemVoid"
+        
+         #  player3UIButton.interactable = false;
+        PUSH, player3UIButton
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineUIButton.__set_interactable__SystemBoolean__SystemVoid"
+        
+         #  player4UIButton.interactable = false;
+        PUSH, player4UIButton
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineUIButton.__set_interactable__SystemBoolean__SystemVoid"
+        JUMP, 0x00003040
+        
+         #  else
+        
+         #  {
+        
+         #  player1Button.SetActive(manager.enableUdonChips && manager.allowRaising);
+        PUSH, manager
+        PUSH, __44_const_intnl_SystemString
+        PUSH, __4_intnl_SystemObject
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __4_intnl_SystemObject
+        PUSH, __56_intnl_SystemBoolean
+        EXTERN, "SystemConvert.__ToBoolean__SystemObject__SystemBoolean"
+        PUSH, __56_intnl_SystemBoolean
+        PUSH, __54_intnl_SystemBoolean
+        COPY
+        PUSH, __54_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00002FE0
+        PUSH, manager
+        PUSH, __53_const_intnl_SystemString
+        PUSH, __5_intnl_SystemObject
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __5_intnl_SystemObject
+        PUSH, __58_intnl_SystemBoolean
+        EXTERN, "SystemConvert.__ToBoolean__SystemObject__SystemBoolean"
+        PUSH, __54_intnl_SystemBoolean
+        PUSH, __58_intnl_SystemBoolean
+        PUSH, __59_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __59_intnl_SystemBoolean
+        PUSH, __54_intnl_SystemBoolean
+        COPY
+        PUSH, player1Button
+        PUSH, __54_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  player2Button.SetActive(false);
+        PUSH, player2Button
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  player3Button.SetActive(false);
+        PUSH, player3Button
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  player4Button.SetActive(false);
+        PUSH, player4Button
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  return true;
+        PUSH, __1_const_intnl_SystemBoolean
+        PUSH, __0_intnl_returnValSymbol_Boolean
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+         #  return false;
+        PUSH, __0_const_intnl_SystemBoolean
+        PUSH, __0_intnl_returnValSymbol_Boolean
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _SetScore(bool isTeam2, int score)
+    .export _SetScore
+        
+    _SetScore:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (score < 0)
+        PUSH, __0_mp_score_Int32
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __60_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __60_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00003268
+        
+         #  {
+        
+         #  foreach (var scoreText in teamAScores)
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __16_intnl_SystemInt32
+        COPY
+        PUSH, teamAScores
+        PUSH, __17_intnl_SystemInt32
+        EXTERN, "TMProTextMeshProUGUIArray.__get_Length__SystemInt32"
+        PUSH, __16_intnl_SystemInt32
+        PUSH, __17_intnl_SystemInt32
+        PUSH, __61_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __61_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00003198
+        PUSH, teamAScores
+        PUSH, __16_intnl_SystemInt32
+        PUSH, __0_scoreText_TextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        
+         #  {
+        
+         #  scoreText.text = "";
+        PUSH, __0_scoreText_TextMeshProUGUI
+        PUSH, __32_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        PUSH, __16_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __16_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x00003108
+        
+         #  foreach (var scoreText in teamBScores)
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __16_intnl_SystemInt32
+        COPY
+        PUSH, teamBScores
+        PUSH, __17_intnl_SystemInt32
+        EXTERN, "TMProTextMeshProUGUIArray.__get_Length__SystemInt32"
+        PUSH, __16_intnl_SystemInt32
+        PUSH, __17_intnl_SystemInt32
+        PUSH, __61_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __61_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00003254
+        PUSH, teamBScores
+        PUSH, __16_intnl_SystemInt32
+        PUSH, __0_scoreText_TextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        
+         #  {
+        
+         #  scoreText.text = "";
+        PUSH, __0_scoreText_TextMeshProUGUI
+        PUSH, __32_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        PUSH, __16_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __16_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x000031C4
+        
+         #  return;
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+         #  if (isTeam2)
+        PUSH, __0_mp_isTeam2_Boolean
+        JUMP_IF_FALSE, 0x00003368
+        
+         #  {
+        
+         #  foreach (var scoreText in teamBScores)
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __16_intnl_SystemInt32
+        COPY
+        PUSH, teamBScores
+        PUSH, __17_intnl_SystemInt32
+        EXTERN, "TMProTextMeshProUGUIArray.__get_Length__SystemInt32"
+        PUSH, __16_intnl_SystemInt32
+        PUSH, __17_intnl_SystemInt32
+        PUSH, __61_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __61_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00003360
+        PUSH, teamBScores
+        PUSH, __16_intnl_SystemInt32
+        PUSH, __0_scoreText_TextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        
+         #  {
+        
+         #  scoreText.text = $"{score}";
+        PUSH, __0_mp_score_Int32
+        PUSH, __13_intnl_SystemString
+        EXTERN, "SystemInt32.__ToString__SystemString"
+        PUSH, __13_intnl_SystemString
+        PUSH, __1_intnl_interpolatedStr_String
+        COPY
+        PUSH, __0_scoreText_TextMeshProUGUI
+        PUSH, __1_intnl_interpolatedStr_String
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        PUSH, __16_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __16_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x000032A4
+        JUMP, 0x00003450
+        
+         #  else
+        
+         #  {
+        
+         #  foreach (var scoreText in teamAScores)
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __16_intnl_SystemInt32
+        COPY
+        PUSH, teamAScores
+        PUSH, __17_intnl_SystemInt32
+        EXTERN, "TMProTextMeshProUGUIArray.__get_Length__SystemInt32"
+        PUSH, __16_intnl_SystemInt32
+        PUSH, __17_intnl_SystemInt32
+        PUSH, __61_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __61_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00003450
+        PUSH, teamAScores
+        PUSH, __16_intnl_SystemInt32
+        PUSH, __0_scoreText_TextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        
+         #  {
+        
+         #  scoreText.text = $"{score}";
+        PUSH, __0_mp_score_Int32
+        PUSH, __13_intnl_SystemString
+        EXTERN, "SystemInt32.__ToString__SystemString"
+        PUSH, __13_intnl_SystemString
+        PUSH, __1_intnl_interpolatedStr_String
+        COPY
+        PUSH, __0_scoreText_TextMeshProUGUI
+        PUSH, __1_intnl_interpolatedStr_String
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        PUSH, __16_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __16_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x00003394
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _GameWasReset()
+    .export _GameWasReset
+        
+    _GameWasReset:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  winnerText.text = "The game was ended!";
+        PUSH, winnerText
+        PUSH, __54_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _TeamWins(bool isTeam2)
+    .export _TeamWins
+        
+    _TeamWins:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (isTeams)
+        PUSH, isTeams
+        JUMP_IF_FALSE, 0x00003740
+        
+         #  {
+        
+         #  if (isTeam2)
+        PUSH, __1_mp_isTeam2_Boolean
+        JUMP_IF_FALSE, 0x00003600
+        
+         #  {
+        
+         #  winnerText.text = $"{player2Scores[0].text} and {player4Scores[0].text} win!";
+        PUSH, player2Scores
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __7_intnl_TMProTextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __7_intnl_TMProTextMeshProUGUI
+        PUSH, __14_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__get_text__SystemString"
+        PUSH, __14_intnl_SystemString
+        PUSH, __2_intnl_interpolatedStr_String
+        COPY
+        PUSH, __2_intnl_interpolatedStr_String
+        PUSH, __55_const_intnl_SystemString
+        PUSH, __15_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __15_intnl_SystemString
+        PUSH, __2_intnl_interpolatedStr_String
+        COPY
+        PUSH, player4Scores
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __8_intnl_TMProTextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __8_intnl_TMProTextMeshProUGUI
+        PUSH, __16_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__get_text__SystemString"
+        PUSH, __2_intnl_interpolatedStr_String
+        PUSH, __16_intnl_SystemString
+        PUSH, __17_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __17_intnl_SystemString
+        PUSH, __2_intnl_interpolatedStr_String
+        COPY
+        PUSH, __2_intnl_interpolatedStr_String
+        PUSH, __56_const_intnl_SystemString
+        PUSH, __18_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __18_intnl_SystemString
+        PUSH, __2_intnl_interpolatedStr_String
+        COPY
+        PUSH, winnerText
+        PUSH, __2_intnl_interpolatedStr_String
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        JUMP, 0x00003738
+        
+         #  else
+        
+         #  {
+        
+         #  winnerText.text = $"{player1Scores[0].text} and {player3Scores[0].text} win!";
+        PUSH, player1Scores
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __7_intnl_TMProTextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __7_intnl_TMProTextMeshProUGUI
+        PUSH, __14_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__get_text__SystemString"
+        PUSH, __14_intnl_SystemString
+        PUSH, __2_intnl_interpolatedStr_String
+        COPY
+        PUSH, __2_intnl_interpolatedStr_String
+        PUSH, __55_const_intnl_SystemString
+        PUSH, __15_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __15_intnl_SystemString
+        PUSH, __2_intnl_interpolatedStr_String
+        COPY
+        PUSH, player3Scores
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __8_intnl_TMProTextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __8_intnl_TMProTextMeshProUGUI
+        PUSH, __16_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__get_text__SystemString"
+        PUSH, __2_intnl_interpolatedStr_String
+        PUSH, __16_intnl_SystemString
+        PUSH, __17_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __17_intnl_SystemString
+        PUSH, __2_intnl_interpolatedStr_String
+        COPY
+        PUSH, __2_intnl_interpolatedStr_String
+        PUSH, __56_const_intnl_SystemString
+        PUSH, __18_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __18_intnl_SystemString
+        PUSH, __2_intnl_interpolatedStr_String
+        COPY
+        PUSH, winnerText
+        PUSH, __2_intnl_interpolatedStr_String
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        JUMP, 0x00003888
+        
+         #  else
+        
+         #  {
+        
+         #  if (isTeam2)
+        PUSH, __1_mp_isTeam2_Boolean
+        JUMP_IF_FALSE, 0x000037F0
+        
+         #  {
+        
+         #  winnerText.text = $"{player2Scores[0].text} wins!";
+        PUSH, player2Scores
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __7_intnl_TMProTextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __7_intnl_TMProTextMeshProUGUI
+        PUSH, __14_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__get_text__SystemString"
+        PUSH, __14_intnl_SystemString
+        PUSH, __2_intnl_interpolatedStr_String
+        COPY
+        PUSH, __2_intnl_interpolatedStr_String
+        PUSH, __57_const_intnl_SystemString
+        PUSH, __15_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __15_intnl_SystemString
+        PUSH, __2_intnl_interpolatedStr_String
+        COPY
+        PUSH, winnerText
+        PUSH, __2_intnl_interpolatedStr_String
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        JUMP, 0x00003888
+        
+         #  else
+        
+         #  {
+        
+         #  winnerText.text = $"{player1Scores[0].text} wins!";
+        PUSH, player1Scores
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __7_intnl_TMProTextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __7_intnl_TMProTextMeshProUGUI
+        PUSH, __14_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__get_text__SystemString"
+        PUSH, __14_intnl_SystemString
+        PUSH, __2_intnl_interpolatedStr_String
+        COPY
+        PUSH, __2_intnl_interpolatedStr_String
+        PUSH, __57_const_intnl_SystemString
+        PUSH, __15_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __15_intnl_SystemString
+        PUSH, __2_intnl_interpolatedStr_String
+        COPY
+        PUSH, winnerText
+        PUSH, __2_intnl_interpolatedStr_String
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private void ResetScoreScreen()
+    ResetScoreScreen:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  foreach (var score in player1Scores)
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __18_intnl_SystemInt32
+        COPY
+        PUSH, player1Scores
+        PUSH, __19_intnl_SystemInt32
+        EXTERN, "TMProTextMeshProUGUIArray.__get_Length__SystemInt32"
+        PUSH, __18_intnl_SystemInt32
+        PUSH, __19_intnl_SystemInt32
+        PUSH, __62_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __62_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00003960
+        PUSH, player1Scores
+        PUSH, __18_intnl_SystemInt32
+        PUSH, __2_score_TextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        
+         #  {
+        
+         #  score.text = "";
+        PUSH, __2_score_TextMeshProUGUI
+        PUSH, __32_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        PUSH, __18_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __18_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x000038D0
+        
+         #  foreach (var score in player2Scores)
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __18_intnl_SystemInt32
+        COPY
+        PUSH, player2Scores
+        PUSH, __19_intnl_SystemInt32
+        EXTERN, "TMProTextMeshProUGUIArray.__get_Length__SystemInt32"
+        PUSH, __18_intnl_SystemInt32
+        PUSH, __19_intnl_SystemInt32
+        PUSH, __62_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __62_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00003A1C
+        PUSH, player2Scores
+        PUSH, __18_intnl_SystemInt32
+        PUSH, __2_score_TextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        
+         #  {
+        
+         #  score.text = "";
+        PUSH, __2_score_TextMeshProUGUI
+        PUSH, __32_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        PUSH, __18_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __18_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x0000398C
+        
+         #  foreach (var score in player3Scores)
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __18_intnl_SystemInt32
+        COPY
+        PUSH, player3Scores
+        PUSH, __19_intnl_SystemInt32
+        EXTERN, "TMProTextMeshProUGUIArray.__get_Length__SystemInt32"
+        PUSH, __18_intnl_SystemInt32
+        PUSH, __19_intnl_SystemInt32
+        PUSH, __62_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __62_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00003AD8
+        PUSH, player3Scores
+        PUSH, __18_intnl_SystemInt32
+        PUSH, __2_score_TextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        
+         #  {
+        
+         #  score.text = "";
+        PUSH, __2_score_TextMeshProUGUI
+        PUSH, __32_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        PUSH, __18_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __18_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x00003A48
+        
+         #  foreach (var score in player4Scores)
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __18_intnl_SystemInt32
+        COPY
+        PUSH, player4Scores
+        PUSH, __19_intnl_SystemInt32
+        EXTERN, "TMProTextMeshProUGUIArray.__get_Length__SystemInt32"
+        PUSH, __18_intnl_SystemInt32
+        PUSH, __19_intnl_SystemInt32
+        PUSH, __62_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __62_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00003B94
+        PUSH, player4Scores
+        PUSH, __18_intnl_SystemInt32
+        PUSH, __2_score_TextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        
+         #  {
+        
+         #  score.text = "";
+        PUSH, __2_score_TextMeshProUGUI
+        PUSH, __32_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        PUSH, __18_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __18_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x00003B04
+        
+         #  foreach (var score in teamAScores)
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __18_intnl_SystemInt32
+        COPY
+        PUSH, teamAScores
+        PUSH, __19_intnl_SystemInt32
+        EXTERN, "TMProTextMeshProUGUIArray.__get_Length__SystemInt32"
+        PUSH, __18_intnl_SystemInt32
+        PUSH, __19_intnl_SystemInt32
+        PUSH, __62_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __62_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00003C50
+        PUSH, teamAScores
+        PUSH, __18_intnl_SystemInt32
+        PUSH, __2_score_TextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        
+         #  {
+        
+         #  score.text = "";
+        PUSH, __2_score_TextMeshProUGUI
+        PUSH, __32_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        PUSH, __18_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __18_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x00003BC0
+        
+         #  foreach (var score in teamBScores)
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __18_intnl_SystemInt32
+        COPY
+        PUSH, teamBScores
+        PUSH, __19_intnl_SystemInt32
+        EXTERN, "TMProTextMeshProUGUIArray.__get_Length__SystemInt32"
+        PUSH, __18_intnl_SystemInt32
+        PUSH, __19_intnl_SystemInt32
+        PUSH, __62_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __62_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00003D0C
+        PUSH, teamBScores
+        PUSH, __18_intnl_SystemInt32
+        PUSH, __2_score_TextMeshProUGUI
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        
+         #  {
+        
+         #  score.text = "";
+        PUSH, __2_score_TextMeshProUGUI
+        PUSH, __32_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        PUSH, __18_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __18_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x00003C7C
+        
+         #  winnerText.text = "";
+        PUSH, winnerText
+        PUSH, __32_const_intnl_SystemString
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+.code_end

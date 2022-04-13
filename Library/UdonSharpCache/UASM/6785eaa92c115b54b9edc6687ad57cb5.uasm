@@ -1,0 +1,209 @@
+.data_start
+
+    .export tableLayers
+    .export maxLengthOfLine
+
+    __refl_const_intnl_udonTypeID: %SystemInt64, null
+    __refl_const_intnl_udonTypeName: %SystemString, null
+    tableLayers: %UnityEngineLayerMask, null
+    maxLengthOfLine: %SystemSingle, null
+    line: %UnityEngineLineRenderer, null
+    hit: %UnityEngineRaycastHit, null
+    defaultEndOfLine: %UnityEngineVector3, null
+    __0_this_intnl_UnityEngineTransform: %UnityEngineTransform, this
+    __0_this_intnl_VRCBilliardsShotGuideController: %VRCUdonUdonBehaviour, this
+    __1_const_intnl_SystemInt32: %SystemInt32, null
+    __0_const_intnl_SystemInt32: %SystemInt32, null
+    __0_const_intnl_SystemType: %SystemType, null
+    __0_const_intnl_SystemUInt32: %SystemUInt32, null
+    __0_intnl_SystemBoolean: %SystemBoolean, null
+    __0_intnl_SystemInt32: %SystemInt32, null
+    __10_intnl_SystemSingle: %SystemSingle, null
+    __9_intnl_SystemSingle: %SystemSingle, null
+    __8_intnl_SystemSingle: %SystemSingle, null
+    __7_intnl_SystemSingle: %SystemSingle, null
+    __6_intnl_SystemSingle: %SystemSingle, null
+    __5_intnl_SystemSingle: %SystemSingle, null
+    __4_intnl_SystemSingle: %SystemSingle, null
+    __3_intnl_SystemSingle: %SystemSingle, null
+    __2_intnl_SystemSingle: %SystemSingle, null
+    __1_intnl_SystemSingle: %SystemSingle, null
+    __0_intnl_SystemSingle: %SystemSingle, null
+    __0_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __0_intnl_returnTarget_UInt32: %SystemUInt32, null
+    __3_intnl_UnityEngineVector3: %UnityEngineVector3, null
+    __2_intnl_UnityEngineVector3: %UnityEngineVector3, null
+    __1_intnl_UnityEngineVector3: %UnityEngineVector3, null
+    __0_intnl_UnityEngineVector3: %UnityEngineVector3, null
+
+.data_end
+
+        
+         #  using UdonSharp;
+        
+         #  using UnityEngine;
+        
+         #  using VRC.SDK3.Components;
+        
+         #  using VRC.SDKBase;
+        
+         #  using VRC.Udon;
+        
+         #  namespace VRCBilliards
+        
+         #  [RequireComponent(typeof(LineRenderer))]
+        
+         #  [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
+        
+         #  public class ShotGuideController : UdonSharpBehaviour
+.code_start
+        
+         #  public LayerMask tableLayers;
+        
+         #  public float maxLengthOfLine;
+        
+         #  private LineRenderer line;
+        
+         #  private RaycastHit hit;
+        
+         #  private Vector3 defaultEndOfLine;
+        
+         #  public void Start()
+    .export _start
+        
+    _start:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  line = GetComponent<LineRenderer>();
+        PUSH, __0_this_intnl_VRCBilliardsShotGuideController
+        PUSH, __0_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineComponent.__get_transform__UnityEngineTransform" # GetComponent strongbox mismatch fix
+        PUSH, __0_intnl_UnityEngineTransform
+        PUSH, __0_const_intnl_SystemType
+        PUSH, line
+        EXTERN, "UnityEngineLineRenderer.__GetComponent__T"
+        
+         #  defaultEndOfLine = new Vector3(maxLengthOfLine, 0, 0);
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __0_intnl_SystemSingle
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __1_intnl_SystemSingle
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, maxLengthOfLine
+        PUSH, __0_intnl_SystemSingle
+        PUSH, __1_intnl_SystemSingle
+        PUSH, defaultEndOfLine
+        EXTERN, "UnityEngineVector3.__ctor__SystemSingle_SystemSingle_SystemSingle__UnityEngineVector3"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void Update()
+    .export _update
+        
+    _update:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.right), out hit, maxLengthOfLine, tableLayers))
+        PUSH, __0_this_intnl_UnityEngineTransform
+        PUSH, __0_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineTransform.__get_position__UnityEngineVector3"
+        PUSH, __1_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineVector3.__get_right__UnityEngineVector3"
+        PUSH, __0_this_intnl_UnityEngineTransform
+        PUSH, __1_intnl_UnityEngineVector3
+        PUSH, __2_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineTransform.__TransformDirection__UnityEngineVector3__UnityEngineVector3"
+        PUSH, tableLayers
+        PUSH, __0_intnl_SystemInt32
+        EXTERN, "UnityEngineLayerMask.__op_Implicit__UnityEngineLayerMask__SystemInt32"
+        PUSH, __0_intnl_UnityEngineVector3
+        PUSH, __2_intnl_UnityEngineVector3
+        PUSH, hit
+        PUSH, maxLengthOfLine
+        PUSH, __0_intnl_SystemInt32
+        PUSH, __0_intnl_SystemBoolean
+        EXTERN, "UnityEnginePhysics.__Raycast__UnityEngineVector3_UnityEngineVector3_UnityEngineRaycastHitRef_SystemSingle_SystemInt32__SystemBoolean"
+        PUSH, __0_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000002BC
+        
+         #  {
+        
+         #  line.SetPosition(1, new Vector3(hit.distance, 0, 0));
+        PUSH, hit
+        PUSH, __2_intnl_SystemSingle
+        EXTERN, "UnityEngineRaycastHit.__get_distance__SystemSingle"
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __3_intnl_SystemSingle
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __4_intnl_SystemSingle
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __2_intnl_SystemSingle
+        PUSH, __3_intnl_SystemSingle
+        PUSH, __4_intnl_SystemSingle
+        PUSH, __3_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineVector3.__ctor__SystemSingle_SystemSingle_SystemSingle__UnityEngineVector3"
+        PUSH, line
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __3_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineLineRenderer.__SetPosition__SystemInt32_UnityEngineVector3__SystemVoid"
+        
+         #  line.endWidth = Mathf.Lerp(line.startWidth, 0, Mathf.InverseLerp(0, maxLengthOfLine, hit.distance));
+        PUSH, line
+        PUSH, __5_intnl_SystemSingle
+        EXTERN, "UnityEngineLineRenderer.__get_startWidth__SystemSingle"
+        PUSH, hit
+        PUSH, __6_intnl_SystemSingle
+        EXTERN, "UnityEngineRaycastHit.__get_distance__SystemSingle"
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __7_intnl_SystemSingle
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __7_intnl_SystemSingle
+        PUSH, maxLengthOfLine
+        PUSH, __6_intnl_SystemSingle
+        PUSH, __8_intnl_SystemSingle
+        EXTERN, "UnityEngineMathf.__InverseLerp__SystemSingle_SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __9_intnl_SystemSingle
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __5_intnl_SystemSingle
+        PUSH, __9_intnl_SystemSingle
+        PUSH, __8_intnl_SystemSingle
+        PUSH, __10_intnl_SystemSingle
+        EXTERN, "UnityEngineMathf.__Lerp__SystemSingle_SystemSingle_SystemSingle__SystemSingle"
+        PUSH, line
+        PUSH, __10_intnl_SystemSingle
+        EXTERN, "UnityEngineLineRenderer.__set_endWidth__SystemSingle__SystemVoid"
+        JUMP, 0x0000030C
+        
+         #  else
+        
+         #  {
+        
+         #  line.SetPosition(1, defaultEndOfLine);
+        PUSH, line
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, defaultEndOfLine
+        EXTERN, "UnityEngineLineRenderer.__SetPosition__SystemInt32_UnityEngineVector3__SystemVoid"
+        
+         #  line.endWidth = 0;
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __2_intnl_SystemSingle
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, line
+        PUSH, __2_intnl_SystemSingle
+        EXTERN, "UnityEngineLineRenderer.__set_endWidth__SystemSingle__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+.code_end

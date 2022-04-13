@@ -1,0 +1,1049 @@
+.data_start
+
+    .export otherHand
+    .export cueParent
+    .export poolStateManager
+    .export cueTip
+    .export otherCue
+    .export usingDesktop
+    .export allowAutoSwitch
+    .export playerID
+    .export localPlayerIsInDesktopTopDownView
+    .export tableIsActive
+
+    __refl_const_intnl_udonTypeID: %SystemInt64, null
+    __refl_const_intnl_udonTypeName: %SystemString, null
+    tableIsActive: %SystemBoolean, null
+    localPlayerIsInDesktopTopDownView: %SystemBoolean, null
+    allowAutoSwitch: %SystemBoolean, null
+    usingDesktop: %SystemBoolean, null
+    cueTip: %UnityEngineGameObject, null
+    playerID: %SystemInt32, null
+    cueParent: %UnityEngineTransform, null
+    otherCue: %VRCUdonUdonBehaviour, null
+    poolStateManager: %VRCUdonUdonBehaviour, null
+    otherHand: %VRCUdonUdonBehaviour, null
+    startupCompleted: %SystemBoolean, null
+    isPickedUp: %SystemBoolean, null
+    locked: %SystemBoolean, null
+    isArmed: %SystemBoolean, null
+    targetCollider: %UnityEngineCollider, null
+    ownCollider: %UnityEngineCollider, null
+    startingRotation: %UnityEngineQuaternion, null
+    upwardsRotation: %UnityEngineQuaternion, null
+    targetTransform: %UnityEngineTransform, null
+    vectorUp: %UnityEngineVector3, null
+    vectorZero: %UnityEngineVector3, null
+    vectorOne: %UnityEngineVector3, null
+    oldTargetPos: %UnityEngineVector3, null
+    offsetBetweenArmedPositions: %UnityEngineVector3, null
+    normalizedLineOfCueWhenArmed: %UnityEngineVector3, null
+    positionAtStartOfArming: %UnityEngineVector3, null
+    otherHandRespawnPosition: %UnityEngineVector3, null
+    cueRespawnPosition: %UnityEngineVector3, null
+    targetPickup: %VRCSDK3ComponentsVRCPickup, null
+    thisPickup: %VRCSDK3ComponentsVRCPickup, null
+    lastPlayerHeld: %VRCSDKBaseVRCPlayerApi, null
+    playerApi: %VRCSDKBaseVRCPlayerApi, null
+    __0_this_intnl_UnityEngineGameObject: %UnityEngineGameObject, this
+    __0_this_intnl_UnityEngineTransform: %UnityEngineTransform, this
+    __0_this_intnl_VRCBilliardsPoolCue: %VRCUdonUdonBehaviour, this
+    __0_lerpPercent_Single: %SystemSingle, null
+    __1_const_intnl_SystemBoolean: %SystemBoolean, null
+    __0_const_intnl_SystemBoolean: %SystemBoolean, null
+    __0_const_intnl_SystemObject: %SystemObject, null
+    __0_const_intnl_SystemSingle: %SystemSingle, null
+    __8_const_intnl_SystemString: %SystemString, null
+    __7_const_intnl_SystemString: %SystemString, null
+    __6_const_intnl_SystemString: %SystemString, null
+    __5_const_intnl_SystemString: %SystemString, null
+    __4_const_intnl_SystemString: %SystemString, null
+    __3_const_intnl_SystemString: %SystemString, null
+    __2_const_intnl_SystemString: %SystemString, null
+    __1_const_intnl_SystemString: %SystemString, null
+    __0_const_intnl_SystemString: %SystemString, null
+    __2_const_intnl_SystemType: %SystemType, null
+    __1_const_intnl_SystemType: %SystemType, null
+    __0_const_intnl_SystemType: %SystemType, null
+    __4_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __3_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __2_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __1_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __0_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __0_const_intnl_SystemUInt32: %SystemUInt32, null
+    __0_const_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null
+    __19_intnl_SystemBoolean: %SystemBoolean, null
+    __18_intnl_SystemBoolean: %SystemBoolean, null
+    __17_intnl_SystemBoolean: %SystemBoolean, null
+    __16_intnl_SystemBoolean: %SystemBoolean, null
+    __15_intnl_SystemBoolean: %SystemBoolean, null
+    __14_intnl_SystemBoolean: %SystemBoolean, null
+    __13_intnl_SystemBoolean: %SystemBoolean, null
+    __12_intnl_SystemBoolean: %SystemBoolean, null
+    __11_intnl_SystemBoolean: %SystemBoolean, null
+    __10_intnl_SystemBoolean: %SystemBoolean, null
+    __9_intnl_SystemBoolean: %SystemBoolean, null
+    __8_intnl_SystemBoolean: %SystemBoolean, null
+    __7_intnl_SystemBoolean: %SystemBoolean, null
+    __6_intnl_SystemBoolean: %SystemBoolean, null
+    __5_intnl_SystemBoolean: %SystemBoolean, null
+    __4_intnl_SystemBoolean: %SystemBoolean, null
+    __3_intnl_SystemBoolean: %SystemBoolean, null
+    __2_intnl_SystemBoolean: %SystemBoolean, null
+    __1_intnl_SystemBoolean: %SystemBoolean, null
+    __0_intnl_SystemBoolean: %SystemBoolean, null
+    __1_intnl_UnityEngineComponent: %UnityEngineComponent, null
+    __0_intnl_UnityEngineComponent: %UnityEngineComponent, null
+    __0_intnl_UnityEngineGameObject: %UnityEngineGameObject, null
+    __1_intnl_SystemInt32: %SystemInt32, null
+    __0_intnl_SystemInt32: %SystemInt32, null
+    __3_intnl_UnityEngineMeshRenderer: %UnityEngineMeshRenderer, null
+    __2_intnl_UnityEngineMeshRenderer: %UnityEngineMeshRenderer, null
+    __1_intnl_UnityEngineMeshRenderer: %UnityEngineMeshRenderer, null
+    __0_intnl_UnityEngineMeshRenderer: %UnityEngineMeshRenderer, null
+    __1_intnl_SystemSingle: %SystemSingle, null
+    __0_intnl_SystemSingle: %SystemSingle, null
+    __5_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __4_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __3_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __2_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __1_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __0_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __0_intnl_returnTarget_UInt32: %SystemUInt32, null
+    __8_intnl_UnityEngineVector3: %UnityEngineVector3, null
+    __7_intnl_UnityEngineVector3: %UnityEngineVector3, null
+    __6_intnl_UnityEngineVector3: %UnityEngineVector3, null
+    __5_intnl_UnityEngineVector3: %UnityEngineVector3, null
+    __4_intnl_UnityEngineVector3: %UnityEngineVector3, null
+    __3_intnl_UnityEngineVector3: %UnityEngineVector3, null
+    __2_intnl_UnityEngineVector3: %UnityEngineVector3, null
+    __1_intnl_UnityEngineVector3: %UnityEngineVector3, null
+    __0_intnl_UnityEngineVector3: %UnityEngineVector3, null
+    __6_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null
+    __5_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null
+    __4_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null
+    __3_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null
+    __2_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null
+    __1_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null
+    __0_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null
+
+.data_end
+
+        
+         #  using UdonSharp;
+        
+         #  using UnityEngine;
+        
+         #  using UnityEngine.Animations;
+        
+         #  using VRC.SDKBase;
+        
+         #  namespace VRCBilliards
+        
+         #  [UdonBehaviourSyncMode(BehaviourSyncMode.Continuous)]
+        
+         #  public class PoolCue : UdonSharpBehaviour
+.code_start
+        
+         #  public PoolOtherHand otherHand;
+        
+         #  private Transform targetTransform;
+        
+         #  private Vector3 cueRespawnPosition;
+        
+         #  private Vector3 otherHandRespawnPosition;
+        
+         #  public Transform cueParent;
+        
+         #  public PoolStateManager poolStateManager;
+        
+         #  public GameObject cueTip;
+        
+         #  public PoolCue otherCue;
+        
+         #  private VRC_Pickup thisPickup;
+        
+         #  private VRC_Pickup targetPickup;
+        
+         #  [HideInInspector]
+        
+         #  public bool allowAutoSwitch = true;
+        
+         #  public int playerID;
+        
+         #  private Vector3 positionAtStartOfArming;
+        
+         #  private Vector3 normalizedLineOfCueWhenArmed;
+        
+         #  private Vector3 offsetBetweenArmedPositions;
+        
+         #  private bool isArmed;
+        
+         #  private bool locked;
+        
+         #  private bool isPickedUp;
+        
+         #  private Collider ownCollider;
+        
+         #  private Collider targetCollider;
+        
+         #  [HideInInspector]
+        
+         #  private VRCPlayerApi playerApi;
+        
+         #  private Vector3 oldTargetPos;
+        
+         #  private Vector3 vectorOne = Vector3.one;
+        
+         #  private Vector3 vectorZero = Vector3.zero;
+        
+         #  private Vector3 vectorUp = Vector3.up;
+        
+         #  private Quaternion upwardsRotation = Quaternion.Euler(-90, 0, 0);
+        
+         #  private Quaternion startingRotation;
+        
+         #  private bool startupCompleted;
+        
+         #  [HideInInspector]
+        
+         #  private VRCPlayerApi lastPlayerHeld;
+        
+         #  public void Start()
+    .export _start
+        
+    _start:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (Networking.LocalPlayer == null)
+        PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi
+        PUSH, __0_const_intnl_VRCSDKBaseVRCPlayerApi
+        PUSH, __0_intnl_SystemBoolean
+        EXTERN, "SystemObject.__op_Equality__SystemObject_SystemObject__SystemBoolean"
+        PUSH, __0_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000074
+        
+         #  {
+        
+         #  gameObject.SetActive(false);
+        PUSH, __0_this_intnl_UnityEngineGameObject
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  return;
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+         #  cueRespawnPosition = transform.localPosition;
+        PUSH, __0_this_intnl_UnityEngineTransform
+        PUSH, cueRespawnPosition
+        EXTERN, "UnityEngineTransform.__get_localPosition__UnityEngineVector3"
+        
+         #  playerApi = Networking.LocalPlayer;
+        PUSH, playerApi
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        
+         #  usingDesktop = !playerApi.IsUserInVR();
+        PUSH, playerApi
+        PUSH, __1_intnl_SystemBoolean
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__IsUserInVR__SystemBoolean"
+        PUSH, __1_intnl_SystemBoolean
+        PUSH, usingDesktop
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        
+         #  ownCollider = GetComponent<Collider>();
+        PUSH, __0_this_intnl_VRCBilliardsPoolCue
+        PUSH, __0_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineComponent.__get_transform__UnityEngineTransform" # GetComponent strongbox mismatch fix
+        PUSH, __0_intnl_UnityEngineTransform
+        PUSH, __0_const_intnl_SystemType
+        PUSH, ownCollider
+        EXTERN, "UnityEngineCollider.__GetComponent__T"
+        
+         #  targetTransform = otherHand.transform;
+        PUSH, otherHand
+        PUSH, targetTransform
+        EXTERN, "UnityEngineComponent.__get_transform__UnityEngineTransform"
+        
+         #  otherHandRespawnPosition = targetTransform.localPosition;
+        PUSH, targetTransform
+        PUSH, otherHandRespawnPosition
+        EXTERN, "UnityEngineTransform.__get_localPosition__UnityEngineVector3"
+        
+         #  targetCollider = targetTransform.GetComponent<Collider>();
+        PUSH, targetTransform
+        PUSH, __1_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineComponent.__get_transform__UnityEngineTransform" # GetComponent strongbox mismatch fix
+        PUSH, __1_intnl_UnityEngineTransform
+        PUSH, __0_const_intnl_SystemType
+        PUSH, targetCollider
+        EXTERN, "UnityEngineCollider.__GetComponent__T"
+        
+         #  if (!targetCollider)
+        PUSH, targetCollider
+        PUSH, __2_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __2_intnl_SystemBoolean
+        PUSH, __3_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __3_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000001E8
+        
+         #  {
+        
+         #  Debug.LogError("PoolCue: Start: target is missing a collider. Aborting cue setup.");
+        PUSH, __0_const_intnl_SystemString
+        EXTERN, "UnityEngineDebug.__LogError__SystemObject__SystemVoid"
+        
+         #  gameObject.SetActive(false);
+        PUSH, __0_this_intnl_UnityEngineGameObject
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  return;
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+         #  ResetTarget();
+        PUSH, __0_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000EF8
+        
+         #  thisPickup = (VRC_Pickup)gameObject.GetComponent(typeof(VRC_Pickup));
+        PUSH, __0_this_intnl_UnityEngineGameObject
+        PUSH, __1_const_intnl_SystemType
+        PUSH, __0_intnl_UnityEngineComponent
+        EXTERN, "UnityEngineGameObject.__GetComponent__SystemType__UnityEngineComponent"
+        PUSH, __0_intnl_UnityEngineComponent
+        PUSH, thisPickup
+        COPY
+        
+         #  if (!thisPickup)
+        PUSH, thisPickup
+        PUSH, __4_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __4_intnl_SystemBoolean
+        PUSH, __5_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __5_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000002A8
+        
+         #  {
+        
+         #  Debug.LogError("PoolCue: Start: this object is missing a VRC_Pickup script. Aborting cue setup.");
+        PUSH, __1_const_intnl_SystemString
+        EXTERN, "UnityEngineDebug.__LogError__SystemObject__SystemVoid"
+        
+         #  gameObject.SetActive(false);
+        PUSH, __0_this_intnl_UnityEngineGameObject
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  return;
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+         #  targetPickup = (VRC_Pickup)targetTransform.GetComponent(typeof(VRC_Pickup));
+        PUSH, targetTransform
+        PUSH, __1_const_intnl_SystemType
+        PUSH, __1_intnl_UnityEngineComponent
+        EXTERN, "UnityEngineTransform.__GetComponent__SystemType__UnityEngineComponent"
+        PUSH, __1_intnl_UnityEngineComponent
+        PUSH, targetPickup
+        COPY
+        
+         #  if (!targetPickup)
+        PUSH, targetPickup
+        PUSH, __6_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __6_intnl_SystemBoolean
+        PUSH, __7_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __7_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000358
+        
+         #  {
+        
+         #  Debug.LogError("PoolCue: Start: target object is missing a VRC_Pickup script. Aborting cue setup.");
+        PUSH, __2_const_intnl_SystemString
+        EXTERN, "UnityEngineDebug.__LogError__SystemObject__SystemVoid"
+        
+         #  gameObject.SetActive(false);
+        PUSH, __0_this_intnl_UnityEngineGameObject
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  return;
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+         #  startingRotation = cueParent.localRotation;
+        PUSH, cueParent
+        PUSH, startingRotation
+        EXTERN, "UnityEngineTransform.__get_localRotation__UnityEngineQuaternion"
+        
+         #  _DenyAccess();
+        PUSH, __1_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000D9C
+        
+         #  startupCompleted = true;
+        PUSH, __1_const_intnl_SystemBoolean
+        PUSH, startupCompleted
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void LateUpdate()
+    .export _lateUpdate
+        
+    _lateUpdate:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (!startupCompleted)
+        PUSH, startupCompleted
+        PUSH, __8_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __8_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000003EC
+        
+         #  {
+        
+         #  return;
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+         #  if (!tableIsActive)
+        PUSH, tableIsActive
+        PUSH, __9_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __9_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000428
+        
+         #  {
+        
+         #  return;
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+         #  if (!localPlayerIsInDesktopTopDownView)
+        PUSH, localPlayerIsInDesktopTopDownView
+        PUSH, __10_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __10_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x0000074C
+        
+         #  {
+        
+         #  if (isArmed)
+        PUSH, isArmed
+        JUMP_IF_FALSE, 0x00000518
+        
+         #  {
+        
+         #  offsetBetweenArmedPositions = transform.position - positionAtStartOfArming; //cueMainGripOriginalPosition - positionAtStartOfArming;
+        PUSH, __0_this_intnl_UnityEngineTransform
+        PUSH, __0_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineTransform.__get_position__UnityEngineVector3"
+        PUSH, __0_intnl_UnityEngineVector3
+        PUSH, positionAtStartOfArming
+        PUSH, offsetBetweenArmedPositions
+        EXTERN, "UnityEngineVector3.__op_Subtraction__UnityEngineVector3_UnityEngineVector3__UnityEngineVector3"
+        
+         #  cueParent.position = positionAtStartOfArming + (normalizedLineOfCueWhenArmed * Vector3.Dot(offsetBetweenArmedPositions, normalizedLineOfCueWhenArmed));
+        PUSH, offsetBetweenArmedPositions
+        PUSH, normalizedLineOfCueWhenArmed
+        PUSH, __0_intnl_SystemSingle
+        EXTERN, "UnityEngineVector3.__Dot__UnityEngineVector3_UnityEngineVector3__SystemSingle"
+        PUSH, normalizedLineOfCueWhenArmed
+        PUSH, __0_intnl_SystemSingle
+        PUSH, __1_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineVector3.__op_Multiply__UnityEngineVector3_SystemSingle__UnityEngineVector3"
+        PUSH, positionAtStartOfArming
+        PUSH, __1_intnl_UnityEngineVector3
+        PUSH, __2_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineVector3.__op_Addition__UnityEngineVector3_UnityEngineVector3__UnityEngineVector3"
+        PUSH, cueParent
+        PUSH, __2_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineTransform.__set_position__UnityEngineVector3__SystemVoid"
+        JUMP, 0x00000734
+        
+         #  else if(thisPickup.currentPlayer != null)
+        PUSH, thisPickup
+        PUSH, __1_intnl_VRCSDKBaseVRCPlayerApi
+        EXTERN, "VRCSDK3ComponentsVRCPickup.__get_currentPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __1_intnl_VRCSDKBaseVRCPlayerApi
+        PUSH, __0_const_intnl_VRCSDKBaseVRCPlayerApi
+        PUSH, __11_intnl_SystemBoolean
+        EXTERN, "SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean"
+        PUSH, __11_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000006D4
+        
+         #  {
+        
+         #  var lerpPercent = Time.deltaTime * 16.0f;
+        PUSH, __0_intnl_SystemSingle
+        EXTERN, "UnityEngineTime.__get_deltaTime__SystemSingle"
+        PUSH, __0_intnl_SystemSingle
+        PUSH, __0_const_intnl_SystemSingle
+        PUSH, __1_intnl_SystemSingle
+        EXTERN, "SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __1_intnl_SystemSingle
+        PUSH, __0_lerpPercent_Single
+        COPY
+        
+         #  cueParent.position = Vector3.Lerp(cueParent.position, transform.position, lerpPercent);
+        PUSH, cueParent
+        PUSH, __0_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineTransform.__get_position__UnityEngineVector3"
+        PUSH, __0_this_intnl_UnityEngineTransform
+        PUSH, __1_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineTransform.__get_position__UnityEngineVector3"
+        PUSH, __0_intnl_UnityEngineVector3
+        PUSH, __1_intnl_UnityEngineVector3
+        PUSH, __0_lerpPercent_Single
+        PUSH, __2_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineVector3.__Lerp__UnityEngineVector3_UnityEngineVector3_SystemSingle__UnityEngineVector3"
+        PUSH, cueParent
+        PUSH, __2_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineTransform.__set_position__UnityEngineVector3__SystemVoid"
+        
+         #  if (thisPickup.currentPlayer.IsUserInVR())
+        PUSH, thisPickup
+        PUSH, __2_intnl_VRCSDKBaseVRCPlayerApi
+        EXTERN, "VRCSDK3ComponentsVRCPickup.__get_currentPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __2_intnl_VRCSDKBaseVRCPlayerApi
+        PUSH, __12_intnl_SystemBoolean
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__IsUserInVR__SystemBoolean"
+        PUSH, __12_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000006B4
+        
+         #  {
+        
+         #  cueParent.LookAt(Vector3.Lerp(oldTargetPos, targetTransform.position, lerpPercent));
+        PUSH, targetTransform
+        PUSH, __3_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineTransform.__get_position__UnityEngineVector3"
+        PUSH, oldTargetPos
+        PUSH, __3_intnl_UnityEngineVector3
+        PUSH, __0_lerpPercent_Single
+        PUSH, __4_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineVector3.__Lerp__UnityEngineVector3_UnityEngineVector3_SystemSingle__UnityEngineVector3"
+        PUSH, cueParent
+        PUSH, __4_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineTransform.__LookAt__UnityEngineVector3__SystemVoid"
+        JUMP, 0x000006CC
+        
+         #  else
+        
+         #  {
+        
+         #  cueParent.rotation = upwardsRotation;
+        PUSH, cueParent
+        PUSH, upwardsRotation
+        EXTERN, "UnityEngineTransform.__set_rotation__UnityEngineQuaternion__SystemVoid"
+        JUMP, 0x00000734
+        
+         #  else
+        
+         #  {
+        
+         #  cueParent.position = transform.position;
+        PUSH, __0_this_intnl_UnityEngineTransform
+        PUSH, __0_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineTransform.__get_position__UnityEngineVector3"
+        PUSH, cueParent
+        PUSH, __0_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineTransform.__set_position__UnityEngineVector3__SystemVoid"
+        
+         #  cueParent.LookAt(targetTransform.position);
+        PUSH, targetTransform
+        PUSH, __1_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineTransform.__get_position__UnityEngineVector3"
+        PUSH, cueParent
+        PUSH, __1_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineTransform.__LookAt__UnityEngineVector3__SystemVoid"
+        
+         #  oldTargetPos = targetTransform.position;
+        PUSH, targetTransform
+        PUSH, oldTargetPos
+        EXTERN, "UnityEngineTransform.__get_position__UnityEngineVector3"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public override void OnPickupUseDown()
+    .export _onPickupUseDown
+        
+    _onPickupUseDown:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (!usingDesktop)
+        PUSH, usingDesktop
+        PUSH, __13_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __13_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000824
+        
+         #  {
+        
+         #  isArmed = true;
+        PUSH, __1_const_intnl_SystemBoolean
+        PUSH, isArmed
+        COPY
+        
+         #  positionAtStartOfArming = transform.position;
+        PUSH, __0_this_intnl_UnityEngineTransform
+        PUSH, positionAtStartOfArming
+        EXTERN, "UnityEngineTransform.__get_position__UnityEngineVector3"
+        
+         #  normalizedLineOfCueWhenArmed = (targetTransform.position - positionAtStartOfArming).normalized;
+        PUSH, targetTransform
+        PUSH, __5_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineTransform.__get_position__UnityEngineVector3"
+        PUSH, __5_intnl_UnityEngineVector3
+        PUSH, positionAtStartOfArming
+        PUSH, __6_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineVector3.__op_Subtraction__UnityEngineVector3_UnityEngineVector3__UnityEngineVector3"
+        PUSH, __6_intnl_UnityEngineVector3
+        PUSH, normalizedLineOfCueWhenArmed
+        EXTERN, "UnityEngineVector3.__get_normalized__UnityEngineVector3"
+        
+         #  poolStateManager._StartHit();
+        PUSH, poolStateManager
+        PUSH, __3_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public override void OnPickupUseUp()
+    .export _onPickupUseUp
+        
+    _onPickupUseUp:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  isArmed = false;
+        PUSH, __0_const_intnl_SystemBoolean
+        PUSH, isArmed
+        COPY
+        
+         #  poolStateManager._EndHit();
+        PUSH, poolStateManager
+        PUSH, __4_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public override void OnPickup()
+    .export _onPickup
+        
+    _onPickup:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  lastPlayerHeld = thisPickup.currentPlayer;
+        PUSH, thisPickup
+        PUSH, lastPlayerHeld
+        EXTERN, "VRCSDK3ComponentsVRCPickup.__get_currentPlayer__VRCSDKBaseVRCPlayerApi"
+        
+         #  if (thisPickup.currentPlayer.playerId == Networking.LocalPlayer.playerId)
+        PUSH, thisPickup
+        PUSH, __3_intnl_VRCSDKBaseVRCPlayerApi
+        EXTERN, "VRCSDK3ComponentsVRCPickup.__get_currentPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __3_intnl_VRCSDKBaseVRCPlayerApi
+        PUSH, __0_intnl_SystemInt32
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32"
+        PUSH, __4_intnl_VRCSDKBaseVRCPlayerApi
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __4_intnl_VRCSDKBaseVRCPlayerApi
+        PUSH, __1_intnl_SystemInt32
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32"
+        PUSH, __0_intnl_SystemInt32
+        PUSH, __1_intnl_SystemInt32
+        PUSH, __14_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __14_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000990
+        
+         #  {
+        
+         #  Networking.SetOwner(Networking.LocalPlayer, gameObject);
+        PUSH, __5_intnl_VRCSDKBaseVRCPlayerApi
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __5_intnl_VRCSDKBaseVRCPlayerApi
+        PUSH, __0_this_intnl_UnityEngineGameObject
+        EXTERN, "VRCSDKBaseNetworking.__SetOwner__VRCSDKBaseVRCPlayerApi_UnityEngineGameObject__SystemVoid"
+        
+         #  Networking.SetOwner(Networking.LocalPlayer, otherHand.gameObject); // Varneon: One .gameObject is fine during pickup event
+        PUSH, __6_intnl_VRCSDKBaseVRCPlayerApi
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, otherHand
+        PUSH, __0_intnl_UnityEngineGameObject
+        EXTERN, "UnityEngineComponent.__get_gameObject__UnityEngineGameObject"
+        PUSH, __6_intnl_VRCSDKBaseVRCPlayerApi
+        PUSH, __0_intnl_UnityEngineGameObject
+        EXTERN, "VRCSDKBaseNetworking.__SetOwner__VRCSDKBaseVRCPlayerApi_UnityEngineGameObject__SystemVoid"
+        
+         #  if (!startupCompleted)
+        PUSH, startupCompleted
+        PUSH, __15_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __15_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000009CC
+        
+         #  {
+        
+         #  return;
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+         #  if (thisPickup.currentPlayer.IsUserInVR())    // We dont need other hand to be availible for desktop player
+        PUSH, thisPickup
+        PUSH, __5_intnl_VRCSDKBaseVRCPlayerApi
+        EXTERN, "VRCSDK3ComponentsVRCPickup.__get_currentPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __5_intnl_VRCSDKBaseVRCPlayerApi
+        PUSH, __16_intnl_SystemBoolean
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__IsUserInVR__SystemBoolean"
+        PUSH, __16_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000A2C
+        
+         #  {
+        
+         #  targetTransform.localScale = vectorOne;
+        PUSH, targetTransform
+        PUSH, vectorOne
+        EXTERN, "UnityEngineTransform.__set_localScale__UnityEngineVector3__SystemVoid"
+        JUMP, 0x00000ACC
+        
+         #  else
+        
+         #  {
+        
+         #  GetComponent<MeshRenderer>().enabled = false;
+        PUSH, __0_this_intnl_VRCBilliardsPoolCue
+        PUSH, __2_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineComponent.__get_transform__UnityEngineTransform" # GetComponent strongbox mismatch fix
+        PUSH, __2_intnl_UnityEngineTransform
+        PUSH, __2_const_intnl_SystemType
+        PUSH, __0_intnl_UnityEngineMeshRenderer
+        EXTERN, "UnityEngineMeshRenderer.__GetComponent__T"
+        PUSH, __0_intnl_UnityEngineMeshRenderer
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineMeshRenderer.__set_enabled__SystemBoolean__SystemVoid"
+        
+         #  otherHand.GetComponent<MeshRenderer>().enabled = false;
+        PUSH, otherHand
+        PUSH, __3_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineComponent.__get_transform__UnityEngineTransform" # GetComponent strongbox mismatch fix
+        PUSH, __3_intnl_UnityEngineTransform
+        PUSH, __2_const_intnl_SystemType
+        PUSH, __1_intnl_UnityEngineMeshRenderer
+        EXTERN, "UnityEngineMeshRenderer.__GetComponent__T"
+        PUSH, __1_intnl_UnityEngineMeshRenderer
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineMeshRenderer.__set_enabled__SystemBoolean__SystemVoid"
+        
+         #  targetTransform.localScale = vectorOne; //TODO: This code is defective.
+        PUSH, targetTransform
+        PUSH, vectorOne
+        EXTERN, "UnityEngineTransform.__set_localScale__UnityEngineVector3__SystemVoid"
+        
+         #  otherHand.isOtherBeingHeld = true;
+        PUSH, otherHand
+        PUSH, __5_const_intnl_SystemString
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        
+         #  targetCollider.enabled = true;
+        PUSH, targetCollider
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineCollider.__set_enabled__SystemBoolean__SystemVoid"
+        
+         #  poolStateManager._LocalPlayerPickedUpCue();
+        PUSH, poolStateManager
+        PUSH, __6_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        
+         #  isPickedUp = true;
+        PUSH, __1_const_intnl_SystemBoolean
+        PUSH, isPickedUp
+        COPY
+        
+         #  targetPickup.pickupable = true;
+        PUSH, targetPickup
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "VRCSDK3ComponentsVRCPickup.__set_pickupable__SystemBoolean"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public override void OnDrop()
+    .export _onDrop
+        
+    _onDrop:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (!startupCompleted)
+        PUSH, startupCompleted
+        PUSH, __17_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __17_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000BB8
+        
+         #  {
+        
+         #  return;
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+         #  ResetTarget();
+        PUSH, __2_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000EF8
+        
+         #  targetPickup.Drop();
+        PUSH, targetPickup
+        EXTERN, "VRCSDK3ComponentsVRCPickup.__Drop__SystemVoid"
+        
+         #  if (usingDesktop)
+        PUSH, usingDesktop
+        JUMP_IF_FALSE, 0x00000CA0
+        
+         #  {
+        
+         #  GetComponent<MeshRenderer>().enabled = true;
+        PUSH, __0_this_intnl_VRCBilliardsPoolCue
+        PUSH, __4_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineComponent.__get_transform__UnityEngineTransform" # GetComponent strongbox mismatch fix
+        PUSH, __4_intnl_UnityEngineTransform
+        PUSH, __2_const_intnl_SystemType
+        PUSH, __2_intnl_UnityEngineMeshRenderer
+        EXTERN, "UnityEngineMeshRenderer.__GetComponent__T"
+        PUSH, __2_intnl_UnityEngineMeshRenderer
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineMeshRenderer.__set_enabled__SystemBoolean__SystemVoid"
+        
+         #  otherHand.GetComponent<MeshRenderer>().enabled = true;
+        PUSH, otherHand
+        PUSH, __5_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineComponent.__get_transform__UnityEngineTransform" # GetComponent strongbox mismatch fix
+        PUSH, __5_intnl_UnityEngineTransform
+        PUSH, __2_const_intnl_SystemType
+        PUSH, __3_intnl_UnityEngineMeshRenderer
+        EXTERN, "UnityEngineMeshRenderer.__GetComponent__T"
+        PUSH, __3_intnl_UnityEngineMeshRenderer
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineMeshRenderer.__set_enabled__SystemBoolean__SystemVoid"
+        
+         #  poolStateManager._OnPutDownCueLocally();
+        PUSH, poolStateManager
+        PUSH, __7_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        
+         #  if (!lastPlayerHeld.IsUserInVR())
+        PUSH, lastPlayerHeld
+        PUSH, __18_intnl_SystemBoolean
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__IsUserInVR__SystemBoolean"
+        PUSH, __18_intnl_SystemBoolean
+        PUSH, __19_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __19_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000CF0
+        
+         #  {
+        
+         #  _Respawn();
+        PUSH, __3_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000E08
+        
+         #  poolStateManager._LocalPlayerDroppedCue();
+        PUSH, poolStateManager
+        PUSH, __8_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        
+         #  isPickedUp = false;
+        PUSH, __0_const_intnl_SystemBoolean
+        PUSH, isPickedUp
+        COPY
+        
+         #  targetPickup.pickupable = false;
+        PUSH, targetPickup
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "VRCSDK3ComponentsVRCPickup.__set_pickupable__SystemBoolean"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _AllowAccess()
+    .export _AllowAccess
+        
+    _AllowAccess:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  ownCollider.enabled = true;
+        PUSH, ownCollider
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineCollider.__set_enabled__SystemBoolean__SystemVoid"
+        
+         #  targetCollider.enabled = true;
+        PUSH, targetCollider
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineCollider.__set_enabled__SystemBoolean__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _DenyAccess()
+    .export _DenyAccess
+        
+    _DenyAccess:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  ownCollider.enabled = false;
+        PUSH, ownCollider
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineCollider.__set_enabled__SystemBoolean__SystemVoid"
+        
+         #  targetCollider.enabled = false;
+        PUSH, targetCollider
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineCollider.__set_enabled__SystemBoolean__SystemVoid"
+        
+         #  thisPickup.Drop();
+        PUSH, thisPickup
+        EXTERN, "VRCSDK3ComponentsVRCPickup.__Drop__SystemVoid"
+        
+         #  targetPickup.Drop();
+        PUSH, targetPickup
+        EXTERN, "VRCSDK3ComponentsVRCPickup.__Drop__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _Respawn()
+    .export _Respawn
+        
+    _Respawn:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  Respawn();
+        PUSH, __4_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000E34
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private void Respawn()
+    Respawn:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  transform.localPosition = cueRespawnPosition;
+        PUSH, __0_this_intnl_UnityEngineTransform
+        PUSH, cueRespawnPosition
+        EXTERN, "UnityEngineTransform.__set_localPosition__UnityEngineVector3__SystemVoid"
+        
+         #  cueParent.localPosition = transform.localPosition;
+        PUSH, __0_this_intnl_UnityEngineTransform
+        PUSH, __7_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineTransform.__get_localPosition__UnityEngineVector3"
+        PUSH, cueParent
+        PUSH, __7_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineTransform.__set_localPosition__UnityEngineVector3__SystemVoid"
+        
+         #  transform.localRotation = startingRotation;
+        PUSH, __0_this_intnl_UnityEngineTransform
+        PUSH, startingRotation
+        EXTERN, "UnityEngineTransform.__set_localRotation__UnityEngineQuaternion__SystemVoid"
+        
+         #  targetTransform.localPosition = otherHandRespawnPosition;
+        PUSH, targetTransform
+        PUSH, otherHandRespawnPosition
+        EXTERN, "UnityEngineTransform.__set_localPosition__UnityEngineVector3__SystemVoid"
+        
+         #  cueParent.LookAt(targetTransform.position);
+        PUSH, targetTransform
+        PUSH, __8_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineTransform.__get_position__UnityEngineVector3"
+        PUSH, cueParent
+        PUSH, __8_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineTransform.__LookAt__UnityEngineVector3__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private void ResetTarget()
+    ResetTarget:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  targetTransform.localScale = vectorZero;
+        PUSH, targetTransform
+        PUSH, vectorZero
+        EXTERN, "UnityEngineTransform.__set_localScale__UnityEngineVector3__SystemVoid"
+        
+         #  otherHand.isOtherBeingHeld = false;
+        PUSH, otherHand
+        PUSH, __5_const_intnl_SystemString
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        
+         #  targetCollider.enabled = false;
+        PUSH, targetCollider
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineCollider.__set_enabled__SystemBoolean__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+.code_end

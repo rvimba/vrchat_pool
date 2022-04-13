@@ -1,0 +1,153 @@
+.data_start
+
+    .export sensitivity
+    .export upperBound
+    .export lowerBound
+
+    __refl_const_intnl_udonTypeID: %SystemInt64, null
+    __refl_const_intnl_udonTypeName: %SystemString, null
+    lowerBound: %SystemSingle, null
+    upperBound: %SystemSingle, null
+    sensitivity: %SystemSingle, null
+    requiredCamera: %UnityEngineCamera, null
+    oldSize: %SystemSingle, null
+    __0_this_intnl_VRCBilliardsCameraSizeScroller: %VRCUdonUdonBehaviour, this
+    __0_newSize_Single: %SystemSingle, null
+    __0_const_intnl_SystemInt32: %SystemInt32, null
+    __0_const_intnl_SystemSingle: %SystemSingle, null
+    __0_const_intnl_SystemString: %SystemString, null
+    __0_const_intnl_SystemType: %SystemType, null
+    __0_const_intnl_SystemUInt32: %SystemUInt32, null
+    __4_intnl_SystemBoolean: %SystemBoolean, null
+    __3_intnl_SystemBoolean: %SystemBoolean, null
+    __2_intnl_SystemBoolean: %SystemBoolean, null
+    __1_intnl_SystemBoolean: %SystemBoolean, null
+    __0_intnl_SystemBoolean: %SystemBoolean, null
+    __1_intnl_SystemSingle: %SystemSingle, null
+    __0_intnl_SystemSingle: %SystemSingle, null
+    __0_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __0_intnl_returnTarget_UInt32: %SystemUInt32, null
+
+.data_end
+
+        
+         #  using UdonSharp;
+        
+         #  using UnityEngine;
+        
+         #  namespace VRCBilliards
+        
+         #  [RequireComponent(typeof(Camera))]
+        
+         #  [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
+        
+         #  public class CameraSizeScroller : UdonSharpBehaviour
+.code_start
+        
+         #  [Range(0, 10f)]
+        
+         #  public float upperBound = 3f;
+        
+         #  public float lowerBound = 0.5f;
+        
+         #  private Camera requiredCamera;
+        
+         #  private float oldSize;
+        
+         #  public void Start()
+    .export _start
+        
+    _start:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  requiredCamera = GetComponent<Camera>();
+        PUSH, __0_this_intnl_VRCBilliardsCameraSizeScroller
+        PUSH, __0_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineComponent.__get_transform__UnityEngineTransform" # GetComponent strongbox mismatch fix
+        PUSH, __0_intnl_UnityEngineTransform
+        PUSH, __0_const_intnl_SystemType
+        PUSH, requiredCamera
+        EXTERN, "UnityEngineCamera.__GetComponent__T"
+        
+         #  oldSize = requiredCamera.orthographicSize;
+        PUSH, requiredCamera
+        PUSH, oldSize
+        EXTERN, "UnityEngineCamera.__get_orthographicSize__SystemSingle"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void Update()
+    .export _update
+        
+    _update:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  float newSize = oldSize - Input.GetAxisRaw("Mouse ScrollWheel") * sensitivity;
+        PUSH, __0_const_intnl_SystemString
+        PUSH, __0_intnl_SystemSingle
+        EXTERN, "UnityEngineInput.__GetAxisRaw__SystemString__SystemSingle"
+        PUSH, __0_intnl_SystemSingle
+        PUSH, sensitivity
+        PUSH, __1_intnl_SystemSingle
+        EXTERN, "SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, oldSize
+        PUSH, __1_intnl_SystemSingle
+        PUSH, __0_newSize_Single
+        EXTERN, "SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle"
+        
+         #  if (newSize > upperBound || newSize < lowerBound)
+        PUSH, __0_newSize_Single
+        PUSH, upperBound
+        PUSH, __1_intnl_SystemBoolean
+        EXTERN, "SystemSingle.__op_GreaterThan__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __1_intnl_SystemBoolean
+        PUSH, __0_intnl_SystemBoolean
+        COPY
+        PUSH, __0_intnl_SystemBoolean
+        PUSH, __2_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __2_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x0000017C
+        PUSH, __0_newSize_Single
+        PUSH, lowerBound
+        PUSH, __3_intnl_SystemBoolean
+        EXTERN, "SystemSingle.__op_LessThan__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __0_intnl_SystemBoolean
+        PUSH, __3_intnl_SystemBoolean
+        PUSH, __4_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalOr__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __4_intnl_SystemBoolean
+        PUSH, __0_intnl_SystemBoolean
+        COPY
+        PUSH, __0_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000001A0
+        
+         #  {
+        
+         #  return;
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+         #  oldSize = newSize;
+        PUSH, __0_newSize_Single
+        PUSH, oldSize
+        COPY
+        
+         #  requiredCamera.orthographicSize = oldSize;
+        PUSH, requiredCamera
+        PUSH, oldSize
+        EXTERN, "UnityEngineCamera.__set_orthographicSize__SystemSingle__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+.code_end
